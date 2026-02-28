@@ -17,6 +17,13 @@ export default {
       colors: {
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
+        brand: {
+          coral: '#EB7F47',
+          red: '#F30D29',
+          dark: '#1A0A00',
+          darkBrown: '#2C1206',
+          offwhite: '#F4F2F0',
+        },
         card: {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))',
@@ -88,10 +95,15 @@ export default {
             height: '0',
           },
         },
+        'pulse-subtle': {
+          '0%, 100%': { opacity: '1', transform: 'scale(1)' },
+          '50%': { opacity: '0.8', transform: 'scale(1.02)' },
+        }
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
+        'pulse-subtle': 'pulse-subtle 3s infinite ease-in-out',
       },
     },
   },

@@ -1,3 +1,40 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-set",
+      "description": "Sadoer skincare combo set on a clean background",
+      "imageUrl": "https://images.unsplash.com/photo-1686121522744-dc323ce3fb26?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxza2luY2FyZSUyMGJvdHRsZXN8ZW58MHx8fHwxNzcyMzEwOTYyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "skincare bottles"
+    },
+    {
+      "id": "serum-detail",
+      "description": "Sadoer Collagen Serum bottle",
+      "imageUrl": "https://images.unsplash.com/photo-1696025487682-9916beeb73e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZmFjZSUyMHNlcnVtfGVufDB8fHx8MTc3MjMxMDk2Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "face serum"
+    },
+    {
+      "id": "cream-detail",
+      "description": "Sadoer Collagen Face Cream jar",
+      "imageUrl": "https://images.unsplash.com/photo-1556228720-195a672e8a03?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxmYWNlJTIwY3JlYW18ZW58MHx8fHwxNzcyMjAzMDM4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "face cream"
+    },
+    {
+      "id": "testimonial-1",
+      "description": "Happy woman with glowing skin",
+      "imageUrl": "https://images.unsplash.com/photo-1579483885319-a0948ecb1873?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxnbG93aW5nJTIwZmFjZXxlbnwwfHx8fDE3NzIzMTA5NjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "glowing face"
+    },
+    {
+      "id": "whatsapp-proof-1",
+      "description": "WhatsApp chat screenshot testimonial",
+      "imageUrl": "https://images.unsplash.com/photo-1644143155332-2ae7baf7d32f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtZXNzYWdlJTIwc2NyZWVuc2hvdHxlbnwwfHx8fDE3NzIzMTA5NjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "message screenshot"
+    },
+    {
+      "id": "whatsapp-proof-2",
+      "description": "WhatsApp chat screenshot testimonial 2",
+      "imageUrl": "https://images.unsplash.com/photo-1641567535859-c58187ac4954?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtZXNzYWdlJTIwc2NyZWVuc2hvdHxlbnwwfHx8fDE3NzIzMTA5NjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "message screenshot"
+    }
+  ]
 }
