@@ -28,21 +28,21 @@ export function BeforeAfter() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {/* Before */}
           <div className="relative group">
-            <div className="absolute top-6 left-6 z-20">
+           {/* <div className="absolute top-6 left-6 z-20">
               <span className="bg-brand-dark text-white px-6 py-2 rounded-full font-black uppercase text-sm tracking-widest shadow-xl">
                 Before
               </span>
-            </div>
+            </div> */}
             <div className="aspect-[3/4] relative rounded-[40px] overflow-hidden border-4 border-[#F8F7F5] shadow-2xl">
-              {beforeImg && (
+              
                 <Image
-                  src={beforeImg.imageUrl}
-                  alt="Skin before Sadoer"
+                  src="https://i.ibb.co/zVc0S82y/Whats-App-Image-2024-09-09-at-13-06-04-66a1b177-819x1024-1-1.jpg"
+                  alt="Before after Sadoer trans"
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
-                  data-ai-hint={beforeImg.imageHint}
+                  data-ai-hint="Before after Sadoer trans"
                 />
-              )}
+              
             </div>
             <div className="mt-4 text-center md:text-left">
                <p className="font-bold text-muted-foreground uppercase text-xs tracking-widest">Dull, Uneven & Rough Texture</p>
@@ -51,21 +51,21 @@ export function BeforeAfter() {
 
           {/* After */}
           <div className="relative group">
-            <div className="absolute top-6 right-6 z-20">
-              <span className="bg-brand-coral text-white px-6 py-2 rounded-full font-black uppercase text-sm tracking-widest shadow-xl">
+            {/*<div className="absolute top-6 right-6 z-20">
+               <span className="bg-brand-coral text-white px-6 py-2 rounded-full font-black uppercase text-sm tracking-widest shadow-xl">
                 After
               </span>
-            </div>
+            </div> */}
             <div className="aspect-[3/4] relative rounded-[40px] overflow-hidden border-4 border-brand-coral/20 shadow-2xl">
-              {afterImg && (
+              
                 <Image
-                  src={afterImg.imageUrl}
-                  alt="Skin after Sadoer"
+                  src="https://i.ibb.co/4Z4m2tjT/acne-scars-treatments-500x500-1-e1741537097312.webp"
+                  alt="Before after Sadoer"
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
-                  data-ai-hint={afterImg.imageHint}
+                  data-ai-hint="Before after Sadoer"
                 />
-              )}
+              
             </div>
             <div className="mt-4 text-center md:text-right">
                <p className="font-bold text-brand-coral uppercase text-xs tracking-widest">Smooth, Bright & Youthful Glow</p>

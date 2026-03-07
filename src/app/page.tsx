@@ -20,6 +20,7 @@ import { PlaceHolderImages } from '@/lib/placeholder-images'
 export default function Home() {
   const whatsapp1 = PlaceHolderImages.find(img => img.id === 'whatsapp-proof-1')
   const whatsapp2 = PlaceHolderImages.find(img => img.id === 'whatsapp-proof-2')
+  const whatsapp3 = PlaceHolderImages.find(img => img.id === 'whatsapp-proof-3')
 
   return (
     <main className="min-h-screen">
@@ -63,7 +64,7 @@ export default function Home() {
       <section className="py-24 bg-[#F4F2F0]">
         <div className="container mx-auto px-4 text-center space-y-12">
           <h2 className="text-4xl font-black text-brand-dark">More WhatsApp Testimonials</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <div className="rounded-3xl overflow-hidden shadow-xl border-4 border-white">
               {whatsapp1 && (
                 <Image 
@@ -85,6 +86,18 @@ export default function Home() {
                   height={600} 
                   className="w-full"
                   data-ai-hint={whatsapp2.imageHint}
+                />
+              )}
+            </div>
+            <div className="rounded-3xl overflow-hidden shadow-xl border-4 border-white">
+              {whatsapp3 && (
+                <Image 
+                  src={whatsapp3.imageUrl} 
+                  alt="WhatsApp Proof 3" 
+                  width={400} 
+                  height={600} 
+                  className="w-full"
+                  data-ai-hint={whatsapp3.imageHint}
                 />
               )}
             </div>

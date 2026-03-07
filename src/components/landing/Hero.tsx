@@ -5,10 +5,8 @@ import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Star } from 'lucide-react'
-import { PlaceHolderImages } from '@/lib/placeholder-images'
 
 export function Hero() {
-  const heroImage = PlaceHolderImages.find(img => img.id === 'hero-set')
 
   return (
     <section className="relative overflow-hidden bg-white pt-16 pb-24 lg:pt-24 lg:pb-32">
@@ -64,15 +62,15 @@ export function Hero() {
           <div className="lg:col-span-6 relative">
             <div className="relative aspect-square max-w-xl mx-auto">
               <div className="absolute inset-0 bg-brand-coral/5 rounded-full blur-3xl" />
-              {heroImage && (
+              
                 <Image 
-                  src={heroImage.imageUrl}
-                  alt={heroImage.description}
+                  src="https://i.ibb.co/WNPMRZHH/Untitled-500-x-300-px-20251012-014242-0000-removebg-preview-1-2.png"
+                  alt="product bundle"
                   fill
                   className="object-contain relative z-10 drop-shadow-2xl"
-                  data-ai-hint={heroImage.imageHint}
+                  data-ai-hint="product bundle"
                 />
-              )}
+              
               
               <div className="absolute top-1/4 -left-4 z-20 bg-white p-4 rounded-2xl shadow-xl border border-brand-coral/10 animate-bounce-slow">
                 <p className="text-xs font-bold text-brand-coral uppercase tracking-tighter">Bonus Gift</p>

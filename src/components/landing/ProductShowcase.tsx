@@ -4,8 +4,8 @@ import { PlaceHolderImages } from '@/lib/placeholder-images'
 import { Badge } from '@/components/ui/badge'
 
 export function ProductShowcase() {
-  const serum = PlaceHolderImages.find(img => img.id === 'serum-detail')
-  const cream = PlaceHolderImages.find(img => img.id === 'cream-detail')
+
+
 
   return (
     <section className="py-24 bg-white">
@@ -24,15 +24,15 @@ export function ProductShowcase() {
           {/* Serum Section */}
           <div className="group space-y-8 bg-[#F8F7F5] p-10 rounded-[40px] transition-all hover:bg-brand-coral/5">
             <div className="aspect-square relative rounded-3xl overflow-hidden bg-white shadow-inner">
-              {serum && (
+              
                 <Image 
-                  src={serum.imageUrl}
-                  alt={serum.description}
+                  src="https://i.ibb.co/yM2Jzwk/IMG-20250222-WA0008-1-1024x1024-removebg-preview.png"
+                  alt="Anti-Aging Serum"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
-                  data-ai-hint={serum.imageHint}
+                  data-ai-hint="Anti-Aging Serum"
                 />
-              )}
+              
             </div>
             <div className="space-y-4">
               <h3 className="text-3xl font-black text-brand-dark">Anti-Aging Collagen Serum (30ml)</h3>
@@ -56,15 +56,15 @@ export function ProductShowcase() {
           {/* Cream Section */}
           <div className="group space-y-8 bg-[#F8F7F5] p-10 rounded-[40px] transition-all hover:bg-brand-dark/5">
             <div className="aspect-square relative rounded-3xl overflow-hidden bg-white shadow-inner">
-              {cream && (
+            
                 <Image 
-                  src={cream.imageUrl}
-                  alt={cream.description}
+                  src="https://i.ibb.co/6RC0cCxb/Screenshot-20250419-113017-Ali-Express-1024x1012-removebg-preview.png"
+                  alt="Collagen Face Cream"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
-                  data-ai-hint={cream.imageHint}
+                  data-ai-hint="Collagen Face Cream"
                 />
-              )}
+              
             </div>
             <div className="space-y-4">
               <h3 className="text-3xl font-black text-brand-dark">Collagen Face Cream (100g)</h3>

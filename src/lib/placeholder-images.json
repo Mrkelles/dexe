@@ -73,6 +73,12 @@
       "imageHint": "message screenshot"
     },
     {
+      "id": "whatsapp-proof-3",
+      "description": "WhatsApp chat screenshot testimonial 3",
+      "imageUrl": "https://picsum.photos/seed/chat3/400/600",
+      "imageHint": "message screenshot"
+    },
+    {
       "id": "grid-1",
       "description": "Close up of smooth facial skin",
       "imageUrl": "https://picsum.photos/seed/skin1/600/600",
