@@ -21,8 +21,8 @@ export function ImageGrid() {
   return (
     <section className="py-24 bg-white">
       <div className="container mx-auto px-4 sm:px-6">
-        <div className="max-w-6xl mx-auto space-y-16">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+        <div className="max-w-4xl mx-auto space-y-16">
+          <div className="grid grid-cols-2 gap-4 md:gap-8">
             {gridImages.map((img, i) => (
               <div key={i} className="aspect-square relative rounded-3xl overflow-hidden shadow-lg border-4 border-[#F8F7F5] group">
                 {img && (
