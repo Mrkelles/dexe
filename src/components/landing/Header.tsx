@@ -11,6 +11,9 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur-md">
+      <div className="bg-brand-red text-white py-2 px-4 text-center text-[10px] sm:text-xs font-black uppercase tracking-[0.2em]">
+        Younger Face in Just 10 Days. No Bleaching or Skin Irritation
+      </div>
       <div className="container mx-auto flex h-16 items-center justify-between px-4 sm:px-6">
         <div className="flex items-center gap-2">
           <div className="h-8 w-8 rounded-full bg-brand-coral" />
