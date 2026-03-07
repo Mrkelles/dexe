@@ -71,6 +71,30 @@
       "description": "WhatsApp chat screenshot testimonial 2",
       "imageUrl": "https://picsum.photos/seed/chat2/400/600",
       "imageHint": "message screenshot"
+    },
+    {
+      "id": "grid-1",
+      "description": "Close up of smooth facial skin",
+      "imageUrl": "https://picsum.photos/seed/skin1/600/600",
+      "imageHint": "smooth skin"
+    },
+    {
+      "id": "grid-2",
+      "description": "Product bottle in a lifestyle setting",
+      "imageUrl": "https://picsum.photos/seed/skin2/600/600",
+      "imageHint": "skincare bottle"
+    },
+    {
+      "id": "grid-3",
+      "description": "User applying cream to face",
+      "imageUrl": "https://picsum.photos/seed/skin3/600/600",
+      "imageHint": "applying cream"
+    },
+    {
+      "id": "grid-4",
+      "description": "Glowy skin results after use",
+      "imageUrl": "https://picsum.photos/seed/skin4/600/600",
+      "imageHint": "glowy skin"
     }
   ]
 }

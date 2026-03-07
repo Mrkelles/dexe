@@ -1,0 +1,53 @@
+
+"use client"
+
+import React from 'react'
+import Image from 'next/image'
+import { Button } from '@/components/ui/button'
+import { PlaceHolderImages } from '@/lib/placeholder-images'
+
+export function ImageGrid() {
+  const gridImages = [
+    PlaceHolderImages.find(img => img.id === 'grid-1'),
+    PlaceHolderImages.find(img => img.id === 'grid-2'),
+    PlaceHolderImages.find(img => img.id === 'grid-3'),
+    PlaceHolderImages.find(img => img.id === 'grid-4'),
+  ]
+
+  const scrollToOrder = () => {
+    document.getElementById('order-form')?.scrollIntoView({ behavior: 'smooth' })
+  }
+
+  return (
+    <section className="py-24 bg-white">
+      <div className="container mx-auto px-4 sm:px-6">
+        <div className="max-w-6xl mx-auto space-y-16">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+            {gridImages.map((img, i) => (
+              <div key={i} className="aspect-square relative rounded-3xl overflow-hidden shadow-lg border-4 border-[#F8F7F5] group">
+                {img && (
+                  <Image
+                    src={img.imageUrl}
+                    alt={img.description}
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-110"
+                    data-ai-hint={img.imageHint}
+                  />
+                )}
+              </div>
+            ))}
+          </div>
+
+          <div className="flex justify-center">
+            <Button 
+              onClick={scrollToOrder}
+              className="h-16 px-12 rounded-full bg-brand-red hover:bg-brand-red/90 text-white text-xl font-black shadow-2xl shadow-brand-red/30 transition-all hover:scale-105 active:scale-95 uppercase tracking-tight"
+            >
+              CLICK HERE TO PLACE YOUR ORDER NOW
+            </Button>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
