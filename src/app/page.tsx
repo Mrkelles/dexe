@@ -1,6 +1,9 @@
+
 import React from 'react'
 import { Header } from '@/components/landing/Header'
 import { Hero } from '@/components/landing/Hero'
+import { PromoBanner } from '@/components/landing/PromoBanner'
+import { SideFeature } from '@/components/landing/SideFeature'
 import { ProblemSolution } from '@/components/landing/ProblemSolution'
 import { ProductShowcase } from '@/components/landing/ProductShowcase'
 import { TestimonialSlider } from '@/components/landing/TestimonialSlider'
@@ -20,6 +23,10 @@ export default function Home() {
       <Header />
       
       <Hero />
+
+      <PromoBanner />
+
+      <SideFeature />
 
       {/* Trust Banner */}
       <div className="bg-[#F8F7F5] py-12 border-y border-gray-100">

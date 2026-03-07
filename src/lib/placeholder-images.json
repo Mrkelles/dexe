@@ -7,6 +7,18 @@
       "imageHint": "skincare set"
     },
     {
+      "id": "promo-banner",
+      "description": "Beautiful woman with glowing skin using Sadoer products",
+      "imageUrl": "https://picsum.photos/seed/glow-banner/1200/600",
+      "imageHint": "glowing skin"
+    },
+    {
+      "id": "side-feature",
+      "description": "Close up of collagen serum being applied to skin",
+      "imageUrl": "https://picsum.photos/seed/serum-apply/800/800",
+      "imageHint": "serum application"
+    },
+    {
       "id": "serum-detail",
       "description": "Sadoer Collagen Serum bottle",
       "imageUrl": "https://picsum.photos/seed/serum/600/600",
