@@ -95,6 +95,18 @@
       "description": "Glowy skin results after use",
       "imageUrl": "https://picsum.photos/seed/skin4/600/600",
       "imageHint": "glowy skin"
+    },
+    {
+      "id": "before-comparison",
+      "description": "Dull and rough skin before treatment",
+      "imageUrl": "https://picsum.photos/seed/before-skin/600/800",
+      "imageHint": "rough skin"
+    },
+    {
+      "id": "after-comparison",
+      "description": "Smooth and glowing skin after treatment",
+      "imageUrl": "https://picsum.photos/seed/after-skin/600/800",
+      "imageHint": "glowing skin"
     }
   ]
 }

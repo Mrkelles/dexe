@@ -12,6 +12,7 @@ import { ReviewGrid } from '@/components/landing/ReviewGrid'
 import { UsageGuide } from '@/components/landing/UsageGuide'
 import { OrderForm } from '@/components/landing/OrderForm'
 import { ImageGrid } from '@/components/landing/ImageGrid'
+import { BeforeAfter } from '@/components/landing/BeforeAfter'
 import { Toaster } from '@/components/ui/toaster'
 import Image from 'next/image'
 import { PlaceHolderImages } from '@/lib/placeholder-images'
@@ -49,6 +50,8 @@ export default function Home() {
       <ImageGrid />
 
       <ProductShowcase />
+
+      <BeforeAfter />
 
       <TestimonialSlider />
 
