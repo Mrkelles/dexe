@@ -4,6 +4,7 @@ import { Header } from '@/components/landing/Header'
 import { Hero } from '@/components/landing/Hero'
 import { PromoBanner } from '@/components/landing/PromoBanner'
 import { SideFeature } from '@/components/landing/SideFeature'
+import { StoryFeature } from '@/components/landing/StoryFeature'
 import { ProblemSolution } from '@/components/landing/ProblemSolution'
 import { ProductShowcase } from '@/components/landing/ProductShowcase'
 import { TestimonialSlider } from '@/components/landing/TestimonialSlider'
@@ -25,6 +26,8 @@ export default function Home() {
       <Hero />
 
       <PromoBanner />
+
+      <StoryFeature />
 
       <SideFeature />
 

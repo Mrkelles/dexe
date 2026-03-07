@@ -13,6 +13,12 @@
       "imageHint": "glowing skin"
     },
     {
+      "id": "story-before-after",
+      "description": "Before and after skin transformation comparison",
+      "imageUrl": "https://picsum.photos/seed/transformation/800/400",
+      "imageHint": "before after"
+    },
+    {
       "id": "side-feature",
       "description": "Close up of collagen serum being applied to skin",
       "imageUrl": "https://picsum.photos/seed/serum-apply/800/800",
