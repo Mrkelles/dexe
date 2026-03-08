@@ -1,4 +1,3 @@
-
 "use client"
 
 import React from 'react'
@@ -11,7 +10,7 @@ const allReviews = [
   {
     name: "Ma. Grace",
     location: "Lagos",
-    content: "My face used to have visible wrinkles and fine lines, and my skin looked tired all the time. But since I started using both the serum and the cream together, the difference has been clear. My skin is now brighter, smoother.",
+    content: "My face used to have visible wrinkles and fine lines, and my skin looked tired all the time. But since I started using both the serum and the cream together, the difference has been clear.",
     imageId: "testimonial-1"
   },
   {
@@ -23,7 +22,7 @@ const allReviews = [
   {
     name: "Adesuwa",
     location: "Abeokuta",
-    content: "My skin was looking tired and I had some dark patches from pregnancy. I've been using this sadoer set for about two months now and the changes are clear. My face just looks fresh!",
+    content: "My skin was looking tired and I had some dark patches from pregnancy. I've been using this sadoer set for about two months now and the changes are clear.",
     imageId: "testimonial-3"
   },
   {
@@ -41,19 +40,19 @@ const allReviews = [
   {
     name: "Felicia",
     location: "Abuja",
-    content: "My face was rough Even makeup couldn’t hide it anymore. I used to feel so self-conscious. My face was full of fine lines, rough patches, and it just looked tired all the time. But within 2 weeks, I noticed my face was firmer.",
+    content: "My face was rough Even makeup couldn’t hide it anymore. I used to feel so self-conscious. But within 2 weeks, I noticed my face was firmer, smoother.",
     imageId: "testimonial-6"
   },
   {
     name: "Veronica",
     location: "Lagos",
-    content: "I Can’t Believe My Acne Scars Are Fading! For years, I honestly thought my acne scars were permanent. Within weeks, my acne scars started fading, my face felt so much smoother.",
+    content: "I Can’t Believe My Acne Scars Are Fading! For years, I honestly thought my acne scars were permanent. Within weeks, my face felt so much smoother.",
     imageId: "testimonial-7"
   },
   {
     name: "Funmi A.",
     location: "Ibadan",
-    content: "After having my second baby, my skin changed so much. It became dull, patchy, and had weird breakouts. The difference? Amazing. My skin is smooth, the dark patches have reduced!",
+    content: "After having my second baby, my skin changed so much. It became dull, patchy, and had weird breakouts. The difference? Amazing. My skin is smooth!",
     imageId: "testimonial-8"
   },
   {
@@ -66,51 +65,48 @@ const allReviews = [
 
 export function ReviewGrid() {
   return (
-    <section className="py-24 bg-white">
+    <section id="testimonials" className="py-24 bg-background">
       <div className="container mx-auto px-4 sm:px-6">
-        <div className="text-center mb-16 space-y-4">
-          <h2 className="text-4xl lg:text-5xl font-black text-brand-dark">More Stories of Transformation</h2>
-          <p className="text-muted-foreground">Real people, real results, real confidence restored.</p>
+        <div className="text-center mb-16 space-y-2">
+          <h2 className="text-3xl lg:text-4xl font-black text-brand-dark tracking-tight">Real Stories of Transformation</h2>
+          <p className="text-secondary-foreground font-medium">Real people, real results, real confidence restored.</p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-7xl mx-auto">
           {allReviews.map((rev, i) => {
             const reviewImage = PlaceHolderImages.find(img => img.id === rev.imageId)
             return (
-              <Card key={i} className="h-full border-none shadow-xl rounded-[40px] overflow-hidden bg-white group hover:scale-[1.02] transition-transform duration-300">
+              <Card key={i} className="h-full border border-border-subtle shadow-card rounded-card overflow-hidden bg-white group hover:shadow-cardHover transition-all duration-300">
                 <div className="relative aspect-[4/3] w-full overflow-hidden">
                   {reviewImage && (
                     <Image 
                       src={reviewImage.imageUrl} 
                       alt={rev.name}
                       fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-110"
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
                       data-ai-hint={reviewImage.imageHint}
                     />
                   )}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent" />
                 </div>
                 
-                <CardContent className="p-8 space-y-6">
-                  <div className="space-y-4">
-                    <div className="flex text-yellow-400">
-                      {[1, 2, 3, 4, 5].map(star => <Star key={star} className="h-4 w-4 fill-current" />)}
+                <CardContent className="p-6 space-y-4">
+                  <div className="space-y-3">
+                    <div className="flex text-brand-amber">
+                      {[1, 2, 3, 4, 5].map(star => <Star key={star} className="h-3 w-3 fill-current" />)}
                     </div>
-                    <div className="relative">
-                      <Quote className="absolute -top-2 -left-2 h-8 w-8 text-brand-coral/10 rotate-180" />
-                      <p className="text-base font-medium text-brand-dark leading-relaxed relative z-10 italic">
-                        "{rev.content}"
-                      </p>
-                    </div>
+                    <p className="text-sm font-medium text-brand-dark leading-relaxed italic">
+                      "{rev.content}"
+                    </p>
                   </div>
                   
-                  <div className="pt-6 border-t border-gray-100 flex items-center justify-between">
+                  <div className="pt-4 border-t border-divider flex items-center justify-between">
                     <div>
-                      <p className="font-black text-brand-dark uppercase tracking-tight">{rev.name}</p>
-                      <p className="text-xs font-bold text-brand-coral uppercase tracking-widest">{rev.location}</p>
+                      <p className="text-xs font-bold text-brand-dark uppercase tracking-tight">{rev.name}</p>
+                      <p className="text-[10px] font-bold text-brand-amber uppercase tracking-widest">{rev.location}</p>
                     </div>
-                    <div className="h-10 w-10 rounded-full bg-brand-coral/10 flex items-center justify-center">
-                      <Quote className="h-5 w-5 text-brand-coral" />
+                    <div className="h-8 w-8 rounded-full bg-brand-amber/10 flex items-center justify-center">
+                      <Quote className="h-4 w-4 text-brand-amber" />
                     </div>
                   </div>
                 </CardContent>

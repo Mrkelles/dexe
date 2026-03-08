@@ -10,19 +10,21 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        body: ['Inter', 'sans-serif'],
-        headline: ['Inter', 'sans-serif'],
-        code: ['monospace'],
+        body: ['Inter', 'Plus Jakarta Sans', 'sans-serif'],
+        headline: ['Inter', 'Plus Jakarta Sans', 'sans-serif'],
+        code: ['JetBrains Mono', 'monospace'],
       },
       colors: {
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         brand: {
-          coral: '#EB7F47',
-          red: '#F30D29',
-          dark: '#1A0A00',
-          darkBrown: '#2C1206',
-          offwhite: '#F4F2F0',
+          coral: '#E09000',
+          red: '#F0A500',
+          dark: '#1A1A1A',
+          darkBrown: '#F2F2F0',
+          offwhite: '#F2F2F0',
+          amber: '#F0A500',
+          warmGrey: '#FAFAF9',
         },
         card: {
           DEFAULT: 'hsl(var(--card))',
@@ -55,55 +57,20 @@ export default {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
-        chart: {
-          '1': 'hsl(var(--chart-1))',
-          '2': 'hsl(var(--chart-2))',
-          '3': 'hsl(var(--chart-3))',
-          '4': 'hsl(var(--chart-4))',
-          '5': 'hsl(var(--chart-5))',
-        },
-        sidebar: {
-          DEFAULT: 'hsl(var(--sidebar-background))',
-          foreground: 'hsl(var(--sidebar-foreground))',
-          primary: 'hsl(var(--sidebar-primary))',
-          'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-          accent: 'hsl(var(--sidebar-accent))',
-          'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-          border: 'hsl(var(--sidebar-border))',
-          ring: 'hsl(var(--sidebar-ring))',
-        },
       },
       borderRadius: {
-        lg: 'var(--radius)',
-        md: 'calc(var(--radius) - 2px)',
-        sm: 'calc(var(--radius) - 4px)',
+        lg: '16px',
+        md: '12px',
+        sm: '8px',
+        card: '16px',
+        heroPanel: '20px',
+        button: '999px',
       },
-      keyframes: {
-        'accordion-down': {
-          from: {
-            height: '0',
-          },
-          to: {
-            height: 'var(--radix-accordion-content-height)',
-          },
-        },
-        'accordion-up': {
-          from: {
-            height: 'var(--radix-accordion-content-height)',
-          },
-          to: {
-            height: '0',
-          },
-        },
-        'pulse-subtle': {
-          '0%, 100%': { opacity: '1', transform: 'scale(1)' },
-          '50%': { opacity: '0.8', transform: 'scale(1.02)' },
-        }
-      },
-      animation: {
-        'accordion-down': 'accordion-down 0.2s ease-out',
-        'accordion-up': 'accordion-up 0.2s ease-out',
-        'pulse-subtle': 'pulse-subtle 3s infinite ease-in-out',
+      boxShadow: {
+        card: '0 1px 4px rgba(0,0,0,0.05)',
+        cardHover: '0 4px 16px rgba(0,0,0,0.08)',
+        heroPanel: '0 8px 32px rgba(240,165,0,0.15)',
+        nav: '0 1px 0 #EBEBEB',
       },
     },
   },

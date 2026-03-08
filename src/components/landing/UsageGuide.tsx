@@ -9,63 +9,63 @@ export function UsageGuide() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-8">
               <div className="space-y-4">
-                <h2 className="text-4xl lg:text-5xl font-black">How To Use For Best Results</h2>
-                <p className="text-lg text-brand-offwhite/60">Follow this simple routine to unlock your baby-smooth skin.</p>
+                <h2 className="text-3xl lg:text-5xl font-black text-white">How To Use For Best Results</h2>
+                <p className="text-lg text-white/60 font-medium">Follow this simple routine to unlock your baby-smooth skin.</p>
               </div>
 
               <div className="space-y-6">
                 <div className="flex gap-4">
-                  <div className="h-12 w-12 rounded-2xl bg-brand-coral flex items-center justify-center shrink-0">
-                    <Moon className="h-6 w-6 text-brand-dark" />
+                  <div className="h-10 w-10 rounded-xl bg-brand-amber flex items-center justify-center shrink-0">
+                    <Moon className="h-5 w-5 text-white" />
                   </div>
                   <div className="space-y-1">
-                    <h4 className="text-xl font-bold">Night/Indoor Routine</h4>
-                    <p className="text-brand-offwhite/70">Massage the serum into your face and follow up immediately with the face cream. Best used at night or when indoors.</p>
+                    <h4 className="text-lg font-bold">Night/Indoor Routine</h4>
+                    <p className="text-white/60 text-sm">Massage the serum into your face and follow up immediately with the face cream. Best used at night or when indoors.</p>
                   </div>
                 </div>
 
                 <div className="flex gap-4">
-                  <div className="h-12 w-12 rounded-2xl bg-brand-red flex items-center justify-center shrink-0">
-                    <ShieldCheck className="h-6 w-6 text-white" />
+                  <div className="h-10 w-10 rounded-xl bg-white/10 flex items-center justify-center shrink-0 border border-white/10">
+                    <ShieldCheck className="h-5 w-5 text-white" />
                   </div>
                   <div className="space-y-1">
-                    <h4 className="text-xl font-bold">Sun Protection</h4>
-                    <p className="text-brand-offwhite/70">Always use a sunscreen during the day to protect your new glowing skin from the harsh Nigerian sun.</p>
+                    <h4 className="text-lg font-bold">Sun Protection</h4>
+                    <p className="text-white/60 text-sm">Always use a sunscreen during the day to protect your new glowing skin from the harsh Nigerian sun.</p>
                   </div>
                 </div>
 
                 <div className="flex gap-4">
-                  <div className="h-12 w-12 rounded-2xl bg-white/10 flex items-center justify-center shrink-0">
-                    <Lightbulb className="h-6 w-6 text-brand-coral" />
+                  <div className="h-10 w-10 rounded-xl bg-brand-amber flex items-center justify-center shrink-0">
+                    <Lightbulb className="h-5 w-5 text-white" />
                   </div>
                   <div className="space-y-1">
-                    <h4 className="text-xl font-bold">Pro-Tip</h4>
-                    <p className="text-brand-offwhite/70">Consistency is key. Use daily for 10 days straight to see the magic happen!</p>
+                    <h4 className="text-lg font-bold">Pro-Tip</h4>
+                    <p className="text-white/60 text-sm">Consistency is key. Use daily for 10 days straight to see the magic happen!</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="bg-brand-darkBrown p-10 rounded-[40px] border border-white/10 relative overflow-hidden">
+            <div className="bg-white/5 p-10 rounded-heroPanel border border-white/10 relative overflow-hidden backdrop-blur-md">
               <div className="absolute top-0 right-0 p-8">
-                <div className="h-24 w-24 rounded-full bg-brand-red flex items-center justify-center -rotate-12 shadow-2xl">
-                  <span className="text-white font-black text-center text-xs uppercase leading-none">Limited<br/>Offer</span>
+                <div className="h-20 w-20 rounded-full bg-brand-amber flex items-center justify-center -rotate-12 shadow-heroPanel">
+                  <span className="text-white font-black text-center text-[10px] uppercase leading-none tracking-widest">Limited<br/>Offer</span>
                 </div>
               </div>
               <div className="space-y-6">
-                <h3 className="text-3xl font-black">Limited Time Bundle</h3>
-                <div className="space-y-2">
-                  <p className="text-gray-400 line-through text-lg">Normal Price: ₦43,500</p>
-                  <p className="text-5xl font-black text-brand-coral">₦29,500</p>
-                  <p className="text-brand-red font-bold uppercase tracking-widest text-sm">Save ₦14,000 Today!</p>
+                <h3 className="text-2xl font-black text-white">Limited Time Bundle</h3>
+                <div className="space-y-1">
+                  <p className="text-white/40 line-through text-lg font-medium">Normal Price: ₦43,500</p>
+                  <p className="text-5xl font-black text-brand-amber tracking-tighter tabular-nums">₦29,500</p>
+                  <p className="text-brand-amber font-bold uppercase tracking-widest text-[10px]">Save ₦14,000 Today!</p>
                 </div>
-                <div className="pt-6 border-t border-white/5 space-y-4">
-                  <p className="text-sm font-medium text-brand-offwhite/60 italic">"I finally feel confident going out without makeup again."</p>
+                <div className="pt-6 border-t border-white/10 space-y-4">
+                  <p className="text-xs font-medium text-white/70 italic leading-relaxed">"I finally feel confident going out without makeup again."</p>
                   <div className="flex items-center gap-3">
-                    <div className="h-8 w-8 rounded-full bg-gray-500 overflow-hidden">
+                    <div className="h-7 w-7 rounded-full bg-white/20 overflow-hidden border border-white/20">
                       <img src="https://picsum.photos/seed/face1/100/100" alt="Reviewer" />
                     </div>
-                    <span className="text-xs font-bold uppercase">Ma. Grace, Lagos</span>
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-white/90">Ma. Grace, Lagos</span>
                   </div>
                 </div>
               </div>
