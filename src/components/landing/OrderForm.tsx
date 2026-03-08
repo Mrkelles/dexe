@@ -1,9 +1,11 @@
+
 "use client"
 
-import React from 'react'
+import React, { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import * as z from 'zod'
+import { useRouter } from 'next/navigation'
 import { Button } from '@/components/ui/button'
 import {
   Form,
@@ -24,7 +26,8 @@ import {
 } from '@/components/ui/select'
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group'
 import { useToast } from '@/hooks/use-toast'
-import { Lock, Truck } from 'lucide-react'
+import { Lock, Truck, Loader2 } from 'lucide-react'
+import { submitOrder } from '@/app/actions/order'
 
 const formSchema = z.object({
   package: z.string().min(1, 'Please select a package'),
@@ -38,6 +41,9 @@ const formSchema = z.object({
 
 export function OrderForm() {
   const { toast } = useToast()
+  const router = useRouter()
+  const [isSubmitting, setIsSubmitting] = useState(false)
+
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -51,13 +57,34 @@ export function OrderForm() {
     },
   })
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values)
-    toast({
-      title: "Order Submitted Successfully!",
-      description: "We will contact you shortly to confirm your delivery.",
-    })
-    form.reset()
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    setIsSubmitting(true)
+    try {
+      const result = await submitOrder(values)
+      
+      if (result.success) {
+        toast({
+          title: "Order Submitted Successfully!",
+          description: "We will contact you shortly to confirm your delivery.",
+        })
+        form.reset()
+        router.push('/thank-you')
+      } else {
+        toast({
+          variant: "destructive",
+          title: "Submission Failed",
+          description: "There was an error processing your order. Please try again.",
+        })
+      }
+    } catch (error) {
+      toast({
+        variant: "destructive",
+        title: "Error",
+        description: "Something went wrong. Please check your connection and try again.",
+      })
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -83,7 +110,7 @@ export function OrderForm() {
                     <FormControl>
                       <RadioGroup
                         onValueChange={field.onChange}
-                        defaultValue={field.value}
+                        value={field.value}
                         className="grid grid-cols-1 gap-4"
                       >
                         {[
@@ -168,7 +195,7 @@ export function OrderForm() {
                   render={({ field }) => (
                     <FormItem>
                       <FormLabel className="font-bold">When do you want delivery?</FormLabel>
-                      <Select onValueChange={field.onChange} defaultValue={field.value}>
+                      <Select onValueChange={field.onChange} value={field.value}>
                         <FormControl>
                           <SelectTrigger className="rounded-xl border-white bg-white h-12">
                             <SelectValue placeholder="Select delivery day" />
@@ -217,9 +244,17 @@ export function OrderForm() {
               <div className="space-y-4 pt-4">
                 <Button 
                   type="submit" 
-                  className="w-full h-16 rounded-full bg-brand-red hover:bg-brand-red/90 text-white text-xl font-black shadow-2xl shadow-brand-red/30 transition-all active:scale-95"
+                  disabled={isSubmitting}
+                  className="w-full h-16 rounded-full bg-brand-red hover:bg-brand-red/90 text-white text-xl font-black shadow-2xl shadow-brand-red/30 transition-all active:scale-95 flex items-center justify-center gap-2"
                 >
-                  SUBMIT MY ORDER
+                  {isSubmitting ? (
+                    <>
+                      <Loader2 className="h-6 w-6 animate-spin" />
+                      PROCESSING ORDER...
+                    </>
+                  ) : (
+                    'SUBMIT MY ORDER'
+                  )}
                 </Button>
                 <p className="flex items-center justify-center gap-2 text-xs text-muted-foreground uppercase font-bold tracking-widest">
                   <Lock className="h-3 w-3" /> Secure Order Processing

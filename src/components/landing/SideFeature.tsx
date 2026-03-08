@@ -1,26 +1,24 @@
 
 import React from 'react'
 import Image from 'next/image'
-import { PlaceHolderImages } from '@/lib/placeholder-images'
 import { Check } from 'lucide-react'
 
 export function SideFeature() {
-  const featureImg = PlaceHolderImages.find(img => img.id === 'side-feature')
 
   return (
     <section className="py-24 bg-[#F8F7F5]">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="flex flex-col md:flex-row items-center gap-12 lg:gap-24 max-w-6xl mx-auto">
           <div className="w-full md:w-1/2 aspect-square relative rounded-[40px] overflow-hidden shadow-xl">
-            {featureImg && (
+            
               <Image
-                src={featureImg.imageUrl}
-                alt={featureImg.description}
+                src="https://i.ibb.co/r2WwmQKp/1.jpg"
+                alt="Sadoer side by side"
                 fill
                 className="object-cover transition-transform hover:scale-105 duration-700"
-                data-ai-hint={featureImg.imageHint}
+                data-ai-hint="Sadoer side by side"
               />
-            )}
+            
           </div>
           <div className="w-full md:w-1/2 space-y-8">
             <div className="space-y-4">

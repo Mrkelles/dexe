@@ -15,6 +15,7 @@ import { BeforeAfter } from '@/components/landing/BeforeAfter'
 import { ResultFocus } from '@/components/landing/ResultFocus'
 import { Toaster } from '@/components/ui/toaster'
 import Image from 'next/image'
+import { ImageGrid } from '@/components/landing/ImageGrid'
 
 export default function Home() {
   return (
@@ -22,13 +23,7 @@ export default function Home() {
       <Header />
       
       <Hero />
-
-      <PromoBanner />
-
-      <StoryFeature />
-
-      <SideFeature />
-
+      
       {/* Trust Banner */}
       <div className="bg-[#F8F7F5] py-12 border-y border-gray-100">
         <div className="container mx-auto px-4 text-center">
@@ -41,21 +36,30 @@ export default function Home() {
         </div>
       </div>
 
+      <StoryFeature />
+
+      <ImageGrid />
+
+      <BeforeAfter />
+
+      <PromoBanner />
+
+      <SideFeature />
+
       <ProblemSolution />
 
+      <ReviewGrid />
+
       {/* <ImageGrid /> */}
-      
+ 
       <ResultFocus />
 
       <ProductShowcase />
-
-      <BeforeAfter />
 
       {/*<TestimonialSlider />*/}
 
       <UsageGuide />
 
-      <ReviewGrid />
 
       {/* WhatsApp Testimonials */}
       <section className="py-24 bg-[#F4F2F0]">
@@ -122,16 +126,6 @@ export default function Home() {
                   data-ai-hint="WhatsApp Proof 6" 
                 />
             </div>
-            <div className="rounded-3xl overflow-hidden shadow-xl border-4 border-white">
-                <Image 
-                  src="https://i.ibb.co/hxffRnMf/istockphoto-1463321941-612x612-1.jpg"
-                  alt="WhatsApp Proof 6" 
-                  width={400} 
-                  height={600} 
-                  className="w-full"
-                  data-ai-hint="WhatsApp Proof 6" 
-                />
-            </div>
           </div>
         </div>
       </section>
@@ -146,7 +140,7 @@ export default function Home() {
               This site is not a part of the Facebook™ website or Facebook™ Inc. Additionally, this site is NOT endorsed by Facebook™ in any way. FACEBOOK™ is a trademark of FACEBOOK™, Inc.
             </p>
             <div className="pt-8 border-t border-gray-50 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-bold uppercase tracking-widest text-muted-foreground">
-              <p>&copy; 2024 Sadoer Youthful Glow. All Rights Reserved.</p>
+              <p>&copy; 2026 Oello Shop. All Rights Reserved.</p>
               <div className="flex gap-6">
                 <a href="#" className="hover:text-brand-coral">Privacy Policy</a>
                 <a href="#" className="hover:text-brand-coral">Terms of Service</a>
