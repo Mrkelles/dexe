@@ -66,41 +66,86 @@ export default function Home() {
           <h2 className="text-4xl font-black text-brand-dark">More WhatsApp Testimonials</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <div className="rounded-3xl overflow-hidden shadow-xl border-4 border-white">
-              {whatsapp1 && (
+              
                 <Image 
-                  src={whatsapp1.imageUrl} 
-                  alt="WhatsApp Proof" 
+                  src="https://i.ibb.co/WWdgWfgW/IMG-20251013-WA0036.jpg"
+                  alt="WhatsApp Proof"
                   width={400} 
                   height={600} 
                   className="w-full"
-                  data-ai-hint={whatsapp1.imageHint}
+                  data-ai-hint="WhatsApp Proof" 
                 />
-              )}
+              
             </div>
             <div className="rounded-3xl overflow-hidden shadow-xl border-4 border-white">
-              {whatsapp2 && (
+              
                 <Image 
-                  src={whatsapp2.imageUrl} 
+                  src="https://i.ibb.co/Xf2Mb8c9/IMG-20251014-WA0009-533x1024.jpg" 
                   alt="WhatsApp Proof 2" 
                   width={400} 
                   height={600} 
                   className="w-full"
-                  data-ai-hint={whatsapp2.imageHint}
+                  data-ai-hint="WhatsApp Proof 2" 
                 />
-              )}
+              
             </div>
             <div className="rounded-3xl overflow-hidden shadow-xl border-4 border-white">
-              {whatsapp3 && (
+              
                 <Image 
-                  src={whatsapp3.imageUrl} 
+                  src="https://i.ibb.co/pBT4PYwQ/IMG-20251015-WA0019-1.jpg"
                   alt="WhatsApp Proof 3" 
                   width={400} 
                   height={600} 
                   className="w-full"
-                  data-ai-hint={whatsapp3.imageHint}
+                  data-ai-hint="WhatsApp Proof 3" 
                 />
-              )}
+              
             </div>
+            <div className="rounded-3xl overflow-hidden shadow-xl border-4 border-white">
+                <Image 
+                  src="https://i.ibb.co/zTqsjdnb/IMG-20250731-WA00061.jpg"
+                  alt="WhatsApp Proof 4" 
+                  width={400} 
+                  height={600} 
+                  className="w-full"
+                  data-ai-hint="WhatsApp Proof 4" 
+                />
+            </div>
+
+            <div className="rounded-3xl overflow-hidden shadow-xl border-4 border-white">
+                <Image 
+                  src="https://i.ibb.co/svgW9yBB/IMG-20250731-WA00001.jpg"
+                  alt="WhatsApp Proof 5" 
+                  width={400} 
+                  height={600} 
+                  className="w-full"
+                  data-ai-hint="WhatsApp Proof 5" 
+                />
+            </div>
+
+            <div className="rounded-3xl overflow-hidden shadow-xl border-4 border-white">
+                <Image 
+                  src="https://i.ibb.co/G3C0sNdn/IMG-20251011-WA0005.jpg"
+                  alt="WhatsApp Proof 6" 
+                  width={400} 
+                  height={600} 
+                  className="w-full"
+                  data-ai-hint="WhatsApp Proof 6" 
+                />
+            </div>
+
+            <div className="rounded-3xl overflow-hidden shadow-xl border-4 border-white">
+                <Image 
+                  src="https://i.ibb.co/hxffRnMf/istockphoto-1463321941-612x612-1.jpg"
+                  alt="WhatsApp Proof 6" 
+                  width={400} 
+                  height={600} 
+                  className="w-full"
+                  data-ai-hint="WhatsApp Proof 6" 
+                />
+            </div>
+
+            
           </div>
         </div>
       </section>

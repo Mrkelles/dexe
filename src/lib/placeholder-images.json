@@ -61,6 +61,36 @@
       "imageHint": "fresh face"
     },
     {
+      "id": "testimonial-5",
+      "description": "Young woman with clear skin",
+      "imageUrl": "https://picsum.photos/seed/woman4/600/400",
+      "imageHint": "clear skin"
+    },
+    {
+      "id": "testimonial-6",
+      "description": "Smiling man with smooth skin",
+      "imageUrl": "https://picsum.photos/seed/man2/600/400",
+      "imageHint": "smooth skin"
+    },
+    {
+      "id": "testimonial-7",
+      "description": "Woman showing off her glow",
+      "imageUrl": "https://picsum.photos/seed/woman5/600/400",
+      "imageHint": "radiant skin"
+    },
+    {
+      "id": "testimonial-8",
+      "description": "Satisfied customer portrait",
+      "imageUrl": "https://picsum.photos/seed/woman6/600/400",
+      "imageHint": "happy face"
+    },
+    {
+      "id": "testimonial-9",
+      "description": "Beauty enthusiast testimonial",
+      "imageUrl": "https://picsum.photos/seed/woman7/600/400",
+      "imageHint": "beauty portrait"
+    },
+    {
       "id": "whatsapp-proof-1",
       "description": "WhatsApp chat screenshot testimonial",
       "imageUrl": "https://picsum.photos/seed/chat1/400/600",
