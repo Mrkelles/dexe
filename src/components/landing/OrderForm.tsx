@@ -1,4 +1,3 @@
-
 "use client"
 
 import React, { useState } from 'react'
@@ -73,7 +72,7 @@ export function OrderForm() {
         toast({
           variant: "destructive",
           title: "Submission Failed",
-          description: "There was an error processing your order. Please try again.",
+          description: result.error || "There was an error processing your order. Please try again.",
         })
       }
     } catch (error) {
