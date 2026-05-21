@@ -2,8 +2,11 @@
 import React from 'react'
 import Image from 'next/image'
 import { Leaf } from 'lucide-react'
+import { PlaceHolderImages } from '@/lib/placeholder-images'
 
 export function NaturalIngredients() {
+  const botanicalImage = PlaceHolderImages.find(img => img.id === 'botanical-main')
+
   const ingredients = [
     {
       name: "Chinese Ginseng Extract",
@@ -51,13 +54,15 @@ export function NaturalIngredients() {
 
           <div className="w-full lg:w-1/2 relative">
             <div className="aspect-square relative rounded-[40px] overflow-hidden border-8 border-[#111111] shadow-2xl">
-              <Image 
-                src="https://picsum.photos/seed/dexe-botanicals/800/800"
-                alt="Natural Ingredients"
-                fill
-                className="object-cover"
-                data-ai-hint="botanical herbs"
-              />
+              {botanicalImage && (
+                <Image 
+                  src={botanicalImage.imageUrl}
+                  alt={botanicalImage.description}
+                  fill
+                  className="object-cover"
+                  data-ai-hint={botanicalImage.imageHint}
+                />
+              )}
               <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent" />
               <div className="absolute bottom-10 left-10">
                 <p className="text-[#22C55E] font-black text-2xl uppercase italic tracking-tighter">100% Herbal Based</p>

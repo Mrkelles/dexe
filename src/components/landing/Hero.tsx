@@ -1,3 +1,4 @@
+
 "use client"
 
 import React from 'react'
@@ -5,8 +6,10 @@ import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Star } from 'lucide-react'
+import { PlaceHolderImages } from '@/lib/placeholder-images'
 
 export function Hero() {
+  const heroImage = PlaceHolderImages.find(img => img.id === 'hero-main')
 
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-[#050505] to-[#111111] py-16 lg:py-24 text-white">
@@ -63,13 +66,15 @@ export function Hero() {
             <div className="relative aspect-square max-w-xl mx-auto">
               <div className="absolute inset-0 bg-[#22C55E]/10 rounded-full blur-3xl" />
               
-              <Image 
-                src="https://picsum.photos/seed/dexe-product/800/800"
-                alt="Dexe Black Hair Shampoo Pack"
-                fill
-                className="object-contain relative z-10 drop-shadow-2xl rounded-[20px]"
-                data-ai-hint="black hair shampoo pack"
-              />
+              {heroImage && (
+                <Image 
+                  src={heroImage.imageUrl}
+                  alt={heroImage.description}
+                  fill
+                  className="object-contain relative z-10 drop-shadow-2xl rounded-[20px]"
+                  data-ai-hint={heroImage.imageHint}
+                />
+              )}
               
               <div className="absolute top-1/4 -left-4 z-20 bg-black/40 backdrop-blur-md p-4 rounded-2xl border border-white/10">
                 <p className="text-[10px] font-bold text-[#22C55E] uppercase tracking-wider">Original Dexe</p>

@@ -1,6 +1,18 @@
 {
   "placeholderImages": [
     {
+      "id": "hero-main",
+      "description": "Original Dexe Black Hair Shampoo",
+      "imageUrl": "https://i.ibb.co/BVtVpfdM/DEXE.webp",
+      "imageHint": "dexe shampoo"
+    },
+    {
+      "id": "botanical-main",
+      "description": "Natural ingredients for hair growth",
+      "imageUrl": "https://i.ibb.co/Q7Y1K795/Gemini-Generated-Image-5kkue65kkue65kku.png",
+      "imageHint": "herbal hair"
+    },
+    {
       "id": "hero-set",
       "description": "Dexe Black Hair Shampoo Box and Sachets",
       "imageUrl": "https://picsum.photos/seed/dexe-hero/1080/1080",
