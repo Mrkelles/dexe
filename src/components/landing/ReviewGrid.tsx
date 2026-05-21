@@ -1,3 +1,4 @@
+
 "use client"
 
 import React from 'react'
@@ -24,42 +25,6 @@ const allReviews = [
     location: "Enugu",
     content: "Great product. It doesn't stain my skin like regular dyes. The black is very deep and natural-looking. I'm on my 3rd box now.",
     imageId: "testimonial-3"
-  },
-  {
-    name: "Deji A.",
-    location: "Abuja",
-    content: "The best part is how fast it works. 5 minutes and you are done. No need to sit in the salon for 1 hour. Highly recommended.",
-    imageId: "testimonial-4"
-  },
-  {
-    name: "Chief Oladipo",
-    location: "Ibadan",
-    content: "I was skeptical at first, but Dexe exceeded my expectations. It covered all my stubborn grey hair perfectly. Very affordable too.",
-    imageId: "testimonial-5"
-  },
-  {
-    name: "Blessing",
-    location: "Port Harcourt",
-    content: "I use it once every month and it keeps my hair jet black. It doesn't have that strong chemical smell which I love.",
-    imageId: "testimonial-6"
-  },
-  {
-    name: "Samuel K.",
-    location: "Jos",
-    content: "Finally a solution for busy people. It's so easy to use. No more grey beard either, I use a little bit on my beard too!",
-    imageId: "testimonial-7"
-  },
-  {
-    name: "Funmi T.",
-    location: "Abeokuta",
-    content: "Fast shipping and original product. My hair looks so healthy and shiny. Thank you Dexe Nigeria!",
-    imageId: "testimonial-8"
-  },
-  {
-    name: "Ibrahim",
-    location: "Kaduna",
-    content: "Best instant shampoo in the market. I've tried others but Dexe lasts the longest. 4 weeks and still black.",
-    imageId: "testimonial-9"
   }
 ]
 
