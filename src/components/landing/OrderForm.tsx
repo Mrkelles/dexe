@@ -1,4 +1,3 @@
-
 "use client"
 
 import React, { useState } from 'react'
@@ -83,13 +82,13 @@ export function OrderForm() {
   }
 
   return (
-    <section id="order-form" className="py-24 bg-[#F2F2F0] border-t border-[#EBEBEB]">
+    <section id="order-form" className="py-24 bg-black border-t border-[#1A1A1A]">
       <div className="container mx-auto px-4 sm:px-6">
-        <div className="max-w-3xl mx-auto bg-white p-8 md:p-12 rounded-[20px] shadow-card border border-[#EBEBEB] space-y-10">
+        <div className="max-w-3xl mx-auto bg-[#0A0A0A] p-8 md:p-12 rounded-[20px] shadow-2xl border border-[#1A1A1A] space-y-10">
           <div className="text-center space-y-3">
-            <h2 className="text-2xl md:text-3xl font-black text-[#1A1A1A] tracking-tight">Complete Your Order</h2>
-            <p className="text-[#6B6B6B] font-semibold flex items-center justify-center gap-2 text-sm uppercase tracking-wider">
-              <Truck className="h-4 w-4 text-[#F0A500]" />
+            <h2 className="text-2xl md:text-3xl font-black text-white tracking-tight uppercase">Complete Your Order</h2>
+            <p className="text-[#22C55E] font-semibold flex items-center justify-center gap-2 text-sm uppercase tracking-wider">
+              <Truck className="h-4 w-4" />
               Pay on Delivery + Free Delivery Nationwide
             </p>
           </div>
@@ -101,7 +100,7 @@ export function OrderForm() {
                 name="package"
                 render={({ field }) => (
                   <FormItem className="space-y-4">
-                    <FormLabel className="text-xs font-bold text-[#6B6B6B] uppercase tracking-widest">Select Your Package</FormLabel>
+                    <FormLabel className="text-xs font-bold text-muted-foreground uppercase tracking-widest">Select Your Package</FormLabel>
                     <FormControl>
                       <RadioGroup
                         onValueChange={field.onChange}
@@ -117,16 +116,16 @@ export function OrderForm() {
                             key={pkg.id}
                             className={`flex items-center justify-between p-4 rounded-xl border transition-all cursor-pointer ${
                               field.value === pkg.id 
-                                ? 'border-[#F0A500] bg-[#F0A500]/5 shadow-sm' 
-                                : 'border-[#EBEBEB] bg-[#FAFAF9] hover:border-gray-300'
+                                ? 'border-[#22C55E] bg-[#22C55E]/5 shadow-sm' 
+                                : 'border-[#1A1A1A] bg-black hover:border-[#22C55E]/40'
                             }`}
                             onClick={() => field.onChange(pkg.id)}
                           >
                             <div className="flex items-center gap-3">
-                              <RadioGroupItem value={pkg.id} id={pkg.id} className="border-[#F0A500] text-[#F0A500]" />
-                              <span className="font-bold text-sm text-[#1A1A1A]">{pkg.label}</span>
+                              <RadioGroupItem value={pkg.id} id={pkg.id} className="border-[#22C55E] text-[#22C55E]" />
+                              <span className="font-bold text-sm text-white">{pkg.label}</span>
                             </div>
-                            <span className="font-black text-[#F0A500] text-sm tabular-nums">{pkg.price}</span>
+                            <span className="font-black text-[#22C55E] text-sm tabular-nums">{pkg.price}</span>
                           </div>
                         ))}
                       </RadioGroup>
@@ -142,9 +141,9 @@ export function OrderForm() {
                   name="fullName"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-[11px] font-bold uppercase tracking-wider text-[#A8A8A8]">Full Name</FormLabel>
+                      <FormLabel className="text-[11px] font-bold uppercase tracking-wider text-muted-foreground">Full Name</FormLabel>
                       <FormControl>
-                        <Input placeholder="Enter your full name" className="rounded-[10px] border-[#EBEBEB] bg-[#FAFAF9] h-11 text-sm focus:ring-[#F0A500]" {...field} />
+                        <Input placeholder="Enter your full name" className="rounded-[10px] border-[#1A1A1A] bg-black h-11 text-sm focus:ring-[#22C55E] text-white" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -156,9 +155,9 @@ export function OrderForm() {
                   name="phone"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-[11px] font-bold uppercase tracking-wider text-[#A8A8A8]">Phone Number</FormLabel>
+                      <FormLabel className="text-[11px] font-bold uppercase tracking-wider text-muted-foreground">Phone Number</FormLabel>
                       <FormControl>
-                        <Input placeholder="Enter your phone number" className="rounded-[10px] border-[#EBEBEB] bg-[#FAFAF9] h-11 text-sm focus:ring-[#F0A500]" {...field} />
+                        <Input placeholder="Enter your phone number" className="rounded-[10px] border-[#1A1A1A] bg-black h-11 text-sm focus:ring-[#22C55E] text-white" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -172,9 +171,9 @@ export function OrderForm() {
                   name="whatsapp"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-[11px] font-bold uppercase tracking-wider text-[#A8A8A8]">WhatsApp Number</FormLabel>
+                      <FormLabel className="text-[11px] font-bold uppercase tracking-wider text-muted-foreground">WhatsApp Number</FormLabel>
                       <FormControl>
-                        <Input placeholder="Enter your WhatsApp number" className="rounded-[10px] border-[#EBEBEB] bg-[#FAFAF9] h-11 text-sm focus:ring-[#F0A500]" {...field} />
+                        <Input placeholder="Enter your WhatsApp number" className="rounded-[10px] border-[#1A1A1A] bg-black h-11 text-sm focus:ring-[#22C55E] text-white" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -186,14 +185,14 @@ export function OrderForm() {
                   name="deliveryTime"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-[11px] font-bold uppercase tracking-wider text-[#A8A8A8]">Requested Delivery</FormLabel>
+                      <FormLabel className="text-[11px] font-bold uppercase tracking-wider text-muted-foreground">Requested Delivery</FormLabel>
                       <Select onValueChange={field.onChange} value={field.value}>
                         <FormControl>
-                          <SelectTrigger className="rounded-[10px] border-[#EBEBEB] bg-[#FAFAF9] h-11 text-sm focus:ring-[#F0A500]">
+                          <SelectTrigger className="rounded-[10px] border-[#1A1A1A] bg-black h-11 text-sm focus:ring-[#22C55E] text-white">
                             <SelectValue placeholder="Select delivery day" />
                           </SelectTrigger>
                         </FormControl>
-                        <SelectContent className="rounded-md">
+                        <SelectContent className="bg-[#0A0A0A] border-[#1A1A1A] text-white">
                           <SelectItem value="today">Today</SelectItem>
                           <SelectItem value="tomorrow">Tomorrow</SelectItem>
                           <SelectItem value="within-3-days">Within 3 Days</SelectItem>
@@ -210,9 +209,9 @@ export function OrderForm() {
                 name="address"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel className="text-[11px] font-bold uppercase tracking-wider text-[#A8A8A8]">Delivery Address (With State)</FormLabel>
+                    <FormLabel className="text-[11px] font-bold uppercase tracking-wider text-muted-foreground">Delivery Address (With State)</FormLabel>
                     <FormControl>
-                      <Textarea placeholder="Enter your full delivery address" className="rounded-[10px] border-[#EBEBEB] bg-[#FAFAF9] min-h-[100px] text-sm focus:ring-[#F0A500]" {...field} />
+                      <Textarea placeholder="Enter your full delivery address" className="rounded-[10px] border-[#1A1A1A] bg-black min-h-[100px] text-sm focus:ring-[#22C55E] text-white" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -223,7 +222,7 @@ export function OrderForm() {
                 <Button 
                   type="submit" 
                   disabled={isSubmitting}
-                  className="w-full h-14 rounded-full bg-[#F0A500] hover:bg-[#C88000] text-white text-lg font-bold shadow-none transition-all active:scale-95 flex items-center justify-center gap-2"
+                  className="w-full h-14 rounded-full bg-[#22C55E] hover:bg-[#16A34A] text-white text-lg font-bold shadow-none transition-all active:scale-95 flex items-center justify-center gap-2"
                 >
                   {isSubmitting ? (
                     <>
@@ -234,7 +233,7 @@ export function OrderForm() {
                     'SUBMIT MY ORDER'
                   )}
                 </Button>
-                <p className="flex items-center justify-center gap-2 text-[10px] text-[#A8A8A8] uppercase font-bold tracking-widest">
+                <p className="flex items-center justify-center gap-2 text-[10px] text-muted-foreground uppercase font-bold tracking-widest">
                   <Lock className="h-3 w-3" /> Secure Order Processing
                 </p>
               </div>

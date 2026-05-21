@@ -18,13 +18,13 @@ export default {
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         brand: {
-          coral: '#E09000',
-          red: '#F0A500',
-          dark: '#1A1A1A',
-          darkBrown: '#F2F2F0',
+          coral: '#22C55E', // Green
+          red: '#16A34A', // Darker Green
+          dark: '#000000',
+          darkBrown: '#0A0A0A',
           offwhite: '#F2F2F0',
-          amber: '#F0A500',
-          warmGrey: '#FAFAF9',
+          amber: '#22C55E',
+          warmGrey: '#121212',
         },
         card: {
           DEFAULT: 'hsl(var(--card))',
@@ -67,10 +67,10 @@ export default {
         button: '999px',
       },
       boxShadow: {
-        card: '0 1px 4px rgba(0,0,0,0.05)',
-        cardHover: '0 4px 16px rgba(0,0,0,0.08)',
-        heroPanel: '0 8px 32px rgba(240,165,0,0.15)',
-        nav: '0 1px 0 #EBEBEB',
+        card: '0 1px 4px rgba(0,0,0,0.5)',
+        cardHover: '0 4px 16px rgba(34,197,94,0.15)',
+        heroPanel: '0 8px 32px rgba(34,197,94,0.15)',
+        nav: '0 1px 0 #1A1A1A',
       },
     },
   },

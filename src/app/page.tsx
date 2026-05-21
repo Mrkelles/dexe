@@ -1,4 +1,3 @@
-
 import React from 'react'
 import { Header } from '@/components/landing/Header'
 import { Hero } from '@/components/landing/Hero'
@@ -19,18 +18,18 @@ import { ImageGrid } from '@/components/landing/ImageGrid'
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen bg-black text-white">
       <Header />
       
       <Hero />
       
       {/* Trust Banner */}
-      <div className="bg-[#F8F7F5] py-12 border-y border-gray-100">
+      <div className="bg-[#0A0A0A] py-12 border-y border-[#1A1A1A]">
         <div className="container mx-auto px-4 text-center">
           <p className="text-sm font-black uppercase tracking-widest text-muted-foreground mb-8">Trusted by families in Lagos, Abuja, Ibadan & more</p>
-          <div className="flex flex-wrap justify-center gap-12 opacity-50 grayscale">
+          <div className="flex flex-wrap justify-center gap-12 opacity-50 grayscale invert">
             {['Beauty Daily', 'Glow Mag', 'Health Hub', 'Nigeria Skincare'].map((name, i) => (
-              <span key={i} className="text-xl font-black">{name}</span>
+              <span key={i} className="text-xl font-black text-white">{name}</span>
             ))}
           </div>
         </div>
@@ -38,7 +37,7 @@ export default function Home() {
 
       <StoryFeature />
 
-      <ImageGrid />
+      {/* <ImageGrid /> */}
 
       <BeforeAfter />
 
@@ -49,24 +48,19 @@ export default function Home() {
       <ProblemSolution />
 
       <ReviewGrid />
-
-      {/* <ImageGrid /> */}
  
       <ResultFocus />
 
       <ProductShowcase />
 
-      {/*<TestimonialSlider />*/}
-
       <UsageGuide />
 
-
       {/* WhatsApp Testimonials */}
-      <section className="py-24 bg-[#F4F2F0]">
+      <section className="py-24 bg-[#050505]">
         <div className="container mx-auto px-4 text-center space-y-12">
-          <h2 className="text-4xl font-black text-brand-dark">More WhatsApp Testimonials</h2>
+          <h2 className="text-4xl font-black text-white">More WhatsApp Testimonials</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <div className="rounded-3xl overflow-hidden shadow-xl border-4 border-white">
+            <div className="rounded-3xl overflow-hidden shadow-xl border-4 border-[#1A1A1A]">
               <Image 
                 src="https://i.ibb.co/WWdgWfgW/IMG-20251013-WA0036.jpg"
                 alt="WhatsApp Proof"
@@ -76,7 +70,7 @@ export default function Home() {
                 data-ai-hint="WhatsApp Proof" 
               />
             </div>
-            <div className="rounded-3xl overflow-hidden shadow-xl border-4 border-white">
+            <div className="rounded-3xl overflow-hidden shadow-xl border-4 border-[#1A1A1A]">
               <Image 
                 src="https://i.ibb.co/Xf2Mb8c9/IMG-20251014-WA0009-533x1024.jpg" 
                 alt="WhatsApp Proof 2" 
@@ -86,7 +80,7 @@ export default function Home() {
                 data-ai-hint="WhatsApp Proof 2" 
               />
             </div>
-            <div className="rounded-3xl overflow-hidden shadow-xl border-4 border-white">
+            <div className="rounded-3xl overflow-hidden shadow-xl border-4 border-[#1A1A1A]">
               <Image 
                 src="https://i.ibb.co/pBT4PYwQ/IMG-20251015-WA0019-1.jpg"
                 alt="WhatsApp Proof 3" 
@@ -96,7 +90,7 @@ export default function Home() {
                 data-ai-hint="WhatsApp Proof 3" 
               />
             </div>
-            <div className="rounded-3xl overflow-hidden shadow-xl border-4 border-white">
+            <div className="rounded-3xl overflow-hidden shadow-xl border-4 border-[#1A1A1A]">
                 <Image 
                   src="https://i.ibb.co/zTqsjdnb/IMG-20250731-WA00061.jpg"
                   alt="WhatsApp Proof 4" 
@@ -106,7 +100,7 @@ export default function Home() {
                   data-ai-hint="WhatsApp Proof 4" 
                 />
             </div>
-            <div className="rounded-3xl overflow-hidden shadow-xl border-4 border-white">
+            <div className="rounded-3xl overflow-hidden shadow-xl border-4 border-[#1A1A1A]">
                 <Image 
                   src="https://i.ibb.co/svgW9yBB/IMG-20250731-WA00001.jpg"
                   alt="WhatsApp Proof 5" 
@@ -116,7 +110,7 @@ export default function Home() {
                   data-ai-hint="WhatsApp Proof 5" 
                 />
             </div>
-            <div className="rounded-3xl overflow-hidden shadow-xl border-4 border-white">
+            <div className="rounded-3xl overflow-hidden shadow-xl border-4 border-[#1A1A1A]">
                 <Image 
                   src="https://i.ibb.co/G3C0sNdn/IMG-20251011-WA0005.jpg"
                   alt="WhatsApp Proof 6" 
@@ -133,13 +127,13 @@ export default function Home() {
       <OrderForm />
 
       {/* Footer */}
-      <footer className="py-12 bg-white border-t border-gray-100">
+      <footer className="py-12 bg-black border-t border-[#1A1A1A]">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center space-y-6">
             <p className="text-xs text-muted-foreground">
               This site is not a part of the Facebook™ website or Facebook™ Inc. Additionally, this site is NOT endorsed by Facebook™ in any way. FACEBOOK™ is a trademark of FACEBOOK™, Inc.
             </p>
-            <div className="pt-8 border-t border-gray-50 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-bold uppercase tracking-widest text-muted-foreground">
+            <div className="pt-8 border-t border-[#1A1A1A] flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-bold uppercase tracking-widest text-muted-foreground">
               <p>&copy; 2026 Oello Shop. All Rights Reserved.</p>
               <div className="flex gap-6">
                 <a href="#" className="hover:text-brand-coral">Privacy Policy</a>

@@ -1,4 +1,3 @@
-
 "use client"
 
 import React from 'react'
@@ -7,16 +6,16 @@ import { Badge } from '@/components/ui/badge'
 
 export function BeforeAfter() {
   return (
-    <section className="py-24 bg-white overflow-hidden">
+    <section className="py-24 bg-black overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-          <Badge className="bg-[#F0A500]/10 text-[#F0A500] border-none rounded-full px-4 py-1 uppercase text-xs font-bold tracking-widest">
+          <Badge className="bg-[#22C55E]/10 text-[#22C55E] border-none rounded-full px-4 py-1 uppercase text-xs font-bold tracking-widest">
             Instant Transformation
           </Badge>
-          <h2 className="text-4xl lg:text-6xl font-black text-[#1A1A1A] tracking-tight">
-            Grey to <span className="text-[#F0A500]">Black</span> in 5 Minutes
+          <h2 className="text-4xl lg:text-6xl font-black text-white tracking-tight uppercase">
+            Grey to <span className="text-[#22C55E]">Black</span> in 5 Minutes
           </h2>
-          <p className="text-lg text-[#6B6B6B]">
+          <p className="text-lg text-muted-foreground">
             Real results from our customers. No trick photography, just the power of Dexe herbal formula.
           </p>
         </div>
@@ -24,7 +23,7 @@ export function BeforeAfter() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {/* Before */}
           <div className="relative group">
-            <div className="aspect-[3/4] relative rounded-[20px] overflow-hidden border-4 border-[#F2F2F0] shadow-card">
+            <div className="aspect-[3/4] relative rounded-[20px] overflow-hidden border-4 border-[#1A1A1A] shadow-2xl">
                 <Image
                   src="https://picsum.photos/seed/hair-before/600/800"
                   alt="Grey hair before Dexe"
@@ -34,13 +33,13 @@ export function BeforeAfter() {
                 />
             </div>
             <div className="mt-4 text-center md:text-left">
-               <p className="font-bold text-[#9A9A9A] uppercase text-xs tracking-widest">Before: Visible Grey & Aged Look</p>
+               <p className="font-bold text-muted-foreground uppercase text-xs tracking-widest">Before: Visible Grey & Aged Look</p>
             </div>
           </div>
 
           {/* After */}
           <div className="relative group">
-            <div className="aspect-[3/4] relative rounded-[20px] overflow-hidden border-4 border-[#F0A500]/20 shadow-cardHover">
+            <div className="aspect-[3/4] relative rounded-[20px] overflow-hidden border-4 border-[#22C55E]/20 shadow-2xl">
                 <Image
                   src="https://picsum.photos/seed/hair-after/600/800"
                   alt="Black hair after Dexe"
@@ -50,7 +49,7 @@ export function BeforeAfter() {
                 />
             </div>
             <div className="mt-4 text-center md:text-right">
-               <p className="font-bold text-[#F0A500] uppercase text-xs tracking-widest">After: Natural Black & Youthful Glow</p>
+               <p className="font-bold text-[#22C55E] uppercase text-xs tracking-widest">After: Natural Black & Youthful Glow</p>
             </div>
           </div>
         </div>

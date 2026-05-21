@@ -1,4 +1,3 @@
-
 "use client"
 
 import React from 'react'
@@ -66,18 +65,18 @@ const allReviews = [
 
 export function ReviewGrid() {
   return (
-    <section id="testimonials" className="py-24 bg-white">
+    <section id="testimonials" className="py-24 bg-black">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="text-center mb-16 space-y-2">
-          <h2 className="text-3xl lg:text-4xl font-black text-[#1A1A1A] tracking-tight">Real Stories of Transformation</h2>
-          <p className="text-[#6B6B6B] font-medium">Real people, real results, real confidence restored.</p>
+          <h2 className="text-3xl lg:text-4xl font-black text-white tracking-tight uppercase">Real Stories of Transformation</h2>
+          <p className="text-muted-foreground font-medium">Real people, real results, real confidence restored.</p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-7xl mx-auto">
           {allReviews.map((rev, i) => {
             const reviewImage = PlaceHolderImages.find(img => img.id === rev.imageId)
             return (
-              <Card key={i} className="h-full border border-[#F0F0EE] shadow-card rounded-[16px] overflow-hidden bg-white group hover:shadow-cardHover transition-all duration-300">
+              <Card key={i} className="h-full border border-[#1A1A1A] shadow-2xl rounded-[16px] overflow-hidden bg-[#0A0A0A] group hover:border-[#22C55E]/40 transition-all duration-300">
                 <div className="relative aspect-[4/3] w-full overflow-hidden">
                   {reviewImage && (
                     <Image 
@@ -88,26 +87,26 @@ export function ReviewGrid() {
                       data-ai-hint={reviewImage.imageHint}
                     />
                   )}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 </div>
                 
                 <CardContent className="p-6 space-y-4">
                   <div className="space-y-3">
-                    <div className="flex text-[#F0A500]">
+                    <div className="flex text-[#22C55E]">
                       {[1, 2, 3, 4, 5].map(star => <Star key={star} className="h-3 w-3 fill-current" />)}
                     </div>
-                    <p className="text-sm font-medium text-[#1A1A1A] leading-relaxed italic">
+                    <p className="text-sm font-medium text-white leading-relaxed italic">
                       "{rev.content}"
                     </p>
                   </div>
                   
-                  <div className="pt-4 border-t border-[#EEEEEC] flex items-center justify-between">
+                  <div className="pt-4 border-t border-[#1A1A1A] flex items-center justify-between">
                     <div>
-                      <p className="text-xs font-bold text-[#1A1A1A] uppercase tracking-tight">{rev.name}</p>
-                      <p className="text-[10px] font-bold text-[#F0A500] uppercase tracking-widest">{rev.location}</p>
+                      <p className="text-xs font-bold text-white uppercase tracking-tight">{rev.name}</p>
+                      <p className="text-[10px] font-bold text-[#22C55E] uppercase tracking-widest">{rev.location}</p>
                     </div>
-                    <div className="h-8 w-8 rounded-full bg-[#F0A500]/10 flex items-center justify-center">
-                      <Quote className="h-4 w-4 text-[#F0A500]" />
+                    <div className="h-8 w-8 rounded-full bg-[#22C55E]/10 flex items-center justify-center">
+                      <Quote className="h-4 w-4 text-[#22C55E]" />
                     </div>
                   </div>
                 </CardContent>
