@@ -1,9 +1,10 @@
+
 import type {Metadata} from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Sadoer Youthful Glow | Transform Your Skin in 10 Days',
-  description: 'The ultimate 2-in-1 anti-aging collagen set for smooth, glowing skin without bleaching.',
+  title: 'Dexe Black Hair Shampoo | Instant 5-Minute Grey Coverage',
+  description: 'Say goodbye to grey hair in just 5 minutes. Dexe Black Hair Shampoo provides natural-looking black hair that lasts for 30 days. No salon visits required.',
 };
 
 export default function RootLayout({
@@ -18,7 +19,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
       </head>
-      <body className="font-body antialiased bg-[#F4F2F0] text-[#0D0D0D]">{children}</body>
+      <body className="font-body antialiased bg-[#F2F2F0] text-[#1A1A1A]">{children}</body>
     </html>
   );
 }

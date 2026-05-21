@@ -3,72 +3,54 @@
 
 import React from 'react'
 import Image from 'next/image'
-import { PlaceHolderImages } from '@/lib/placeholder-images'
 import { Badge } from '@/components/ui/badge'
 
 export function BeforeAfter() {
-  const beforeImg = PlaceHolderImages.find(img => img.id === 'before-comparison')
-  const afterImg = PlaceHolderImages.find(img => img.id === 'after-comparison')
-
   return (
     <section className="py-24 bg-white overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-          <Badge className="bg-brand-red/10 text-brand-red border-none rounded-full px-4 py-1 uppercase text-xs font-bold tracking-widest">
-            Visible Transformation
+          <Badge className="bg-[#F0A500]/10 text-[#F0A500] border-none rounded-full px-4 py-1 uppercase text-xs font-bold tracking-widest">
+            Instant Transformation
           </Badge>
-          <h2 className="text-4xl lg:text-6xl font-black text-brand-dark tracking-tight">
-            See The <span className="text-brand-coral">Real Results</span>
+          <h2 className="text-4xl lg:text-6xl font-black text-[#1A1A1A] tracking-tight">
+            Grey to <span className="text-[#F0A500]">Black</span> in 5 Minutes
           </h2>
-          <p className="text-lg text-muted-foreground">
-            Thousands have experienced the 10-day transformation. No magic, just consistent collagen repair.
+          <p className="text-lg text-[#6B6B6B]">
+            Real results from our customers. No trick photography, just the power of Dexe herbal formula.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {/* Before */}
           <div className="relative group">
-           {/* <div className="absolute top-6 left-6 z-20">
-              <span className="bg-brand-dark text-white px-6 py-2 rounded-full font-black uppercase text-sm tracking-widest shadow-xl">
-                Before
-              </span>
-            </div> */}
-            <div className="aspect-[3/4] relative rounded-[40px] overflow-hidden border-4 border-[#F8F7F5] shadow-2xl">
-              
+            <div className="aspect-[3/4] relative rounded-[20px] overflow-hidden border-4 border-[#F2F2F0] shadow-card">
                 <Image
-                  src="https://i.ibb.co/zVc0S82y/Whats-App-Image-2024-09-09-at-13-06-04-66a1b177-819x1024-1-1.jpg"
-                  alt="Before after Sadoer trans"
+                  src="https://picsum.photos/seed/hair-before/600/800"
+                  alt="Grey hair before Dexe"
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
-                  data-ai-hint="Before after Sadoer trans"
+                  data-ai-hint="grey hair before"
                 />
-              
             </div>
             <div className="mt-4 text-center md:text-left">
-               <p className="font-bold text-muted-foreground uppercase text-xs tracking-widest">Dull, Uneven & Rough Texture</p>
+               <p className="font-bold text-[#9A9A9A] uppercase text-xs tracking-widest">Before: Visible Grey & Aged Look</p>
             </div>
           </div>
 
           {/* After */}
           <div className="relative group">
-            {/*<div className="absolute top-6 right-6 z-20">
-               <span className="bg-brand-coral text-white px-6 py-2 rounded-full font-black uppercase text-sm tracking-widest shadow-xl">
-                After
-              </span>
-            </div> */}
-            <div className="aspect-[3/4] relative rounded-[40px] overflow-hidden border-4 border-brand-coral/20 shadow-2xl">
-              
+            <div className="aspect-[3/4] relative rounded-[20px] overflow-hidden border-4 border-[#F0A500]/20 shadow-cardHover">
                 <Image
-                  src="https://i.ibb.co/4Z4m2tjT/acne-scars-treatments-500x500-1-e1741537097312.webp"
-                  alt="Before after Sadoer"
+                  src="https://picsum.photos/seed/hair-after/600/800"
+                  alt="Black hair after Dexe"
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
-                  data-ai-hint="Before after Sadoer"
+                  data-ai-hint="black hair after"
                 />
-              
             </div>
             <div className="mt-4 text-center md:text-right">
-               <p className="font-bold text-brand-coral uppercase text-xs tracking-widest">Smooth, Bright & Youthful Glow</p>
+               <p className="font-bold text-[#F0A500] uppercase text-xs tracking-widest">After: Natural Black & Youthful Glow</p>
             </div>
           </div>
         </div>

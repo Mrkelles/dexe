@@ -2,147 +2,129 @@
   "placeholderImages": [
     {
       "id": "hero-set",
-      "description": "Sadoer skincare combo set on a clean background",
-      "imageUrl": "https://picsum.photos/seed/skincare-hero/1080/1080",
-      "imageHint": "skincare set"
+      "description": "Dexe Black Hair Shampoo Box and Sachets",
+      "imageUrl": "https://picsum.photos/seed/dexe-hero/1080/1080",
+      "imageHint": "black hair shampoo box"
     },
     {
       "id": "promo-banner",
-      "description": "Beautiful woman with glowing skin using Sadoer products",
-      "imageUrl": "https://picsum.photos/seed/glow-banner/1200/600",
-      "imageHint": "glowing skin"
+      "description": "Transformation from grey to natural black hair",
+      "imageUrl": "https://picsum.photos/seed/hair-glow/1200/600",
+      "imageHint": "healthy black hair"
     },
     {
       "id": "story-before-after",
-      "description": "Before and after skin transformation comparison",
-      "imageUrl": "https://picsum.photos/seed/transformation/800/400",
-      "imageHint": "before after"
+      "description": "Middle aged man transformation grey to black hair",
+      "imageUrl": "https://picsum.photos/seed/hair-trans/800/400",
+      "imageHint": "grey hair dye"
     },
     {
       "id": "side-feature",
-      "description": "Close up of collagen serum being applied to skin",
-      "imageUrl": "https://picsum.photos/seed/serum-apply/800/800",
-      "imageHint": "serum application"
+      "description": "Applying shampoo to hair in the shower",
+      "imageUrl": "https://picsum.photos/seed/hair-wash/800/800",
+      "imageHint": "washing hair"
     },
     {
       "id": "serum-detail",
-      "description": "Sadoer Collagen Serum bottle",
-      "imageUrl": "https://picsum.photos/seed/serum/600/600",
-      "imageHint": "face serum"
+      "description": "Individual Dexe Shampoo Sachet",
+      "imageUrl": "https://picsum.photos/seed/dexe-sachet/600/600",
+      "imageHint": "shampoo sachet"
     },
     {
       "id": "cream-detail",
-      "description": "Sadoer Collagen Face Cream jar",
-      "imageUrl": "https://picsum.photos/seed/cream/600/600",
-      "imageHint": "face cream"
+      "description": "Full Dexe Shampoo Box Pack",
+      "imageUrl": "https://picsum.photos/seed/dexe-box/600/600",
+      "imageHint": "hair product box"
     },
     {
       "id": "testimonial-1",
-      "description": "Happy woman with glowing skin",
-      "imageUrl": "https://i.ibb.co/WTMr2zr/download-2.jpg",
-      "imageHint": "glowing face"
+      "description": "Elderly man with natural looking black hair",
+      "imageUrl": "https://picsum.photos/seed/user-hair-1/400/400",
+      "imageHint": "man black hair"
     },
     {
       "id": "testimonial-2",
-      "description": "Man with clear healthy skin",
-      "imageUrl": "https://i.ibb.co/TMfJr4Kr/istockphoto-1437277659-612x612-1.jpg",
-      "imageHint": "man face"
+      "description": "Woman with shiny black hair",
+      "imageUrl": "https://picsum.photos/seed/user-hair-2/400/400",
+      "imageHint": "woman black hair"
     },
     {
       "id": "testimonial-3",
-      "description": "Woman with bright even skin tone",
-      "imageUrl": "https://i.ibb.co/Hf6ph6J5/Whats-App-Image-2024-12-24-at-12-17-32-PM-4.jpg",
-      "imageHint": "bright face"
+      "description": "Confident man with grey hair covered",
+      "imageUrl": "https://picsum.photos/seed/user-hair-3/400/400",
+      "imageHint": "confident man hair"
     },
     {
       "id": "testimonial-4",
-      "description": "Happy user with fresh skin",
-      "imageUrl": "https://i.ibb.co/B2234mJ8/Whats-App-Image-2024-11-12-at-11-42-25-AM-300x162-1.jpg",
-      "imageHint": "fresh face"
+      "description": "Close up of jet black healthy hair",
+      "imageUrl": "https://picsum.photos/seed/user-hair-4/400/400",
+      "imageHint": "black hair shine"
     },
     {
       "id": "testimonial-5",
-      "description": "Young woman with clear skin",
-      "imageUrl": "https://i.ibb.co/FLn78R9j/vmbbzyavuaxa1-768x577-1.jpg",
-      "imageHint": "clear skin"
+      "description": "User showing hair roots",
+      "imageUrl": "https://picsum.photos/seed/user-hair-5/400/400",
+      "imageHint": "hair roots black"
     },
     {
       "id": "testimonial-6",
-      "description": "Smiling man with smooth skin",
-      "imageUrl": "https://i.ibb.co/CKdRm6qJ/IMG-8547.jpg",
-      "imageHint": "smooth skin"
+      "description": "Happy user after shampoo",
+      "imageUrl": "https://picsum.photos/seed/user-hair-6/400/400",
+      "imageHint": "happy hair results"
     },
     {
       "id": "testimonial-7",
-      "description": "Woman showing off her glow",
-      "imageUrl": "https://i.ibb.co/t1vmDs9/maxresdefault-2-768x365-1.jpg",
-      "imageHint": "radiant skin"
+      "description": "Natural black hair style",
+      "imageUrl": "https://picsum.photos/seed/user-hair-7/400/400",
+      "imageHint": "natural hair style"
     },
     {
       "id": "testimonial-8",
-      "description": "Satisfied customer portrait",
-      "imageUrl": "https://i.ibb.co/qF4mW9cy/Whats-App-Image-2024-09-11-at-21-04-33-56ec30dd-150x150-1.jpg",
-      "imageHint": "happy face"
+      "description": "Younger looking man",
+      "imageUrl": "https://picsum.photos/seed/user-hair-8/400/400",
+      "imageHint": "younger face hair"
     },
     {
       "id": "testimonial-9",
-      "description": "Beauty enthusiast testimonial",
-      "imageUrl": "https://i.ibb.co/NdSsVqx1/Gemini-Generated-Image-nb8yzinb8yzinb8y.png",
-      "imageHint": "beauty portrait"
-    },
-    {
-      "id": "whatsapp-proof-1",
-      "description": "WhatsApp chat screenshot testimonial",
-      "imageUrl": "https://picsum.photos/seed/chat1/400/600",
-      "imageHint": "message screenshot"
-    },
-    {
-      "id": "whatsapp-proof-2",
-      "description": "WhatsApp chat screenshot testimonial 2",
-      "imageUrl": "https://picsum.photos/seed/chat2/400/600",
-      "imageHint": "message screenshot"
-    },
-    {
-      "id": "whatsapp-proof-3",
-      "description": "WhatsApp chat screenshot testimonial 3",
-      "imageUrl": "https://picsum.photos/seed/chat3/400/600",
-      "imageHint": "message screenshot"
+      "description": "Satisfied hair dye user",
+      "imageUrl": "https://picsum.photos/seed/user-hair-9/400/400",
+      "imageHint": "satisfied customer"
     },
     {
       "id": "grid-1",
-      "description": "Close up of smooth facial skin",
-      "imageUrl": "https://i.ibb.co/B2bVMJL7/IMG-20251019-WA0009-e1764092213550.jpg",
-      "imageHint": "smooth skin"
+      "description": "Before hair showing grey",
+      "imageUrl": "https://picsum.photos/seed/grey-1/600/600",
+      "imageHint": "grey hair"
     },
     {
       "id": "grid-2",
-      "description": "Product bottle in a lifestyle setting",
-      "imageUrl": "https://i.ibb.co/9kDdghgg/IMG-20250730-WA00361.jpg",
-      "imageHint": "skincare bottle"
+      "description": "Dexe Shampoo Packet",
+      "imageUrl": "https://picsum.photos/seed/dexe-pack/600/600",
+      "imageHint": "shampoo packet"
     },
     {
       "id": "grid-3",
-      "description": "User applying cream to face",
-      "imageUrl": "https://i.ibb.co/DHQZvF5r/IMG-20251019-WA0009-1-e1764092314120.jpg",
-      "imageHint": "applying cream"
+      "description": "After hair showing black",
+      "imageUrl": "https://picsum.photos/seed/black-1/600/600",
+      "imageHint": "black hair dye"
     },
     {
       "id": "grid-4",
-      "description": "Glowy skin results after use",
-      "imageUrl": "https://i.ibb.co/6cvJYgjT/IMG-20251010-WA00031.jpg",
-      "imageHint": "glowy skin"
+      "description": "Result of 5 minute shampoo",
+      "imageUrl": "https://picsum.photos/seed/result-1/600/600",
+      "imageHint": "instant hair results"
     },
     {
       "id": "before-comparison",
-      "description": "Dull and rough skin before treatment",
-      "imageUrl": "https://picsum.photos/seed/before-skin/600/800",
-      "imageHint": "rough skin"
+      "description": "Full grey head",
+      "imageUrl": "https://picsum.photos/seed/before-grey/600/800",
+      "imageHint": "full grey hair"
     },
     {
       "id": "after-comparison",
-      "description": "Smooth and glowing skin after treatment",
-      "imageUrl": "https://picsum.photos/seed/after-skin/600/800",
-      "imageHint": "glowing skin"
+      "description": "Full black head",
+      "imageUrl": "https://picsum.photos/seed/after-black/600/800",
+      "imageHint": "full black hair"
     }
   ]
 }
