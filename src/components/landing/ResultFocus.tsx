@@ -16,14 +16,14 @@ export function ResultFocus() {
   return (
     <section className="py-24 bg-black">
       <div className="container mx-auto px-4 sm:px-6">
-        <div className="max-w-5xl mx-auto space-y-12">
-          <div className="aspect-[21/9] relative rounded-[20px] overflow-hidden shadow-heroPanel border-8 border-[#1A1A1A]">
+        <div className="max-w-4xl mx-auto space-y-12">
+          <div className="aspect-square relative rounded-[20px] overflow-hidden shadow-heroPanel border-8 border-[#1A1A1A] max-w-2xl mx-auto">
             {resultImage && (
               <Image
                 src={resultImage.imageUrl}
                 alt={resultImage.description}
                 fill
-                className="object-cover"
+                className="object-contain"
                 data-ai-hint={resultImage.imageHint}
               />
             )}
