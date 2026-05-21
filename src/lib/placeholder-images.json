@@ -137,6 +137,12 @@
       "description": "Full black head",
       "imageUrl": "https://picsum.photos/seed/after-black/600/800",
       "imageHint": "full black hair"
+    },
+    {
+      "id": "result-focus-main",
+      "description": "Dexe Black Hair Shampoo Transformation Result",
+      "imageUrl": "https://i.ibb.co/VY0JtxNZ/Gemini-Generated-Image-n18m8hn18m8hn18m.png",
+      "imageHint": "black hair transformation"
     }
   ]
 }
