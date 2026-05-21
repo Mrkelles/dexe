@@ -1,3 +1,4 @@
+
 import React from 'react'
 import { Header } from '@/components/landing/Header'
 import { Hero } from '@/components/landing/Hero'
@@ -12,9 +13,10 @@ import { UsageGuide } from '@/components/landing/UsageGuide'
 import { OrderForm } from '@/components/landing/OrderForm'
 import { BeforeAfter } from '@/components/landing/BeforeAfter'
 import { ResultFocus } from '@/components/landing/ResultFocus'
+import { GlobalTrust } from '@/components/landing/GlobalTrust'
+import { NaturalIngredients } from '@/components/landing/NaturalIngredients'
 import { Toaster } from '@/components/ui/toaster'
 import Image from 'next/image'
-import { ImageGrid } from '@/components/landing/ImageGrid'
 
 export default function Home() {
   return (
@@ -37,15 +39,13 @@ export default function Home() {
 
       <StoryFeature />
 
-      {/* <ImageGrid /> */}
-
       <BeforeAfter />
 
       <PromoBanner />
 
-      <SideFeature />
-
       <ProblemSolution />
+
+      <GlobalTrust />
 
       <ReviewGrid />
  
@@ -53,12 +53,14 @@ export default function Home() {
 
       <ProductShowcase />
 
+      <NaturalIngredients />
+
       <UsageGuide />
 
       {/* WhatsApp Testimonials */}
       <section className="py-24 bg-[#050505]">
         <div className="container mx-auto px-4 text-center space-y-12">
-          <h2 className="text-4xl font-black text-white">More WhatsApp Testimonials</h2>
+          <h2 className="text-4xl font-black text-white uppercase tracking-tighter">More WhatsApp Testimonials</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <div className="rounded-3xl overflow-hidden shadow-xl border-4 border-[#1A1A1A]">
               <Image 
@@ -136,8 +138,8 @@ export default function Home() {
             <div className="pt-8 border-t border-[#1A1A1A] flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-bold uppercase tracking-widest text-muted-foreground">
               <p>&copy; 2026 Oello Shop. All Rights Reserved.</p>
               <div className="flex gap-6">
-                <a href="#" className="hover:text-brand-coral">Privacy Policy</a>
-                <a href="#" className="hover:text-brand-coral">Terms of Service</a>
+                <a href="#" className="hover:text-[#22C55E]">Privacy Policy</a>
+                <a href="#" className="hover:text-[#22C55E]">Terms of Service</a>
               </div>
             </div>
           </div>
