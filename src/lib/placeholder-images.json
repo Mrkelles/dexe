@@ -13,6 +13,18 @@
       "imageHint": "herbal hair"
     },
     {
+      "id": "promo-1",
+      "description": "Dexe Transformation Result 1",
+      "imageUrl": "https://i.ibb.co/YF3hKDg6/1-1-03.webp",
+      "imageHint": "hair transformation 1"
+    },
+    {
+      "id": "promo-2",
+      "description": "Dexe Transformation Result 2",
+      "imageUrl": "https://i.ibb.co/0y18Kd1f/1-12-01.webp",
+      "imageHint": "hair transformation 2"
+    },
+    {
       "id": "hero-set",
       "description": "Dexe Black Hair Shampoo Box and Sachets",
       "imageUrl": "https://picsum.photos/seed/dexe-hero/1080/1080",
