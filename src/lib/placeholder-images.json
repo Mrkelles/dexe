@@ -49,10 +49,10 @@
       "imageHint": "healthy black hair"
     },
     {
-      "id": "story-before-after",
-      "description": "Middle aged man transformation grey to black hair",
-      "imageUrl": "https://picsum.photos/seed/hair-trans/800/400",
-      "imageHint": "grey hair dye"
+      "id": "story-main",
+      "description": "Dexe Product Showcase",
+      "imageUrl": "https://i.ibb.co/fGM4vXWp/Dexe-e1774617074489-768x489.jpg",
+      "imageHint": "dexe product"
     },
     {
       "id": "side-feature",
@@ -170,9 +170,9 @@
     },
     {
       "id": "trust-banner-product",
-      "description": "Dexe Product Showcase Banner",
-      "imageUrl": "https://i.ibb.co/fGM4vXWp/Dexe-e1774617074489-768x489.jpg",
-      "imageHint": "dexe showcase"
+      "description": "Dexe Trust Showcase Banner",
+      "imageUrl": "https://i.ibb.co/mVFqpycD/Gemini-Generated-Image-kfmsegkfmsegkfms.png",
+      "imageHint": "dexe trust"
     }
   ]
 }

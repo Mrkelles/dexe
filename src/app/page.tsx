@@ -42,7 +42,7 @@ export default function Home() {
 
       <div className="bg-black py-12">
         <div className="container mx-auto px-4">
-          <div className="relative aspect-[768/489] max-w-4xl mx-auto rounded-[20px] overflow-hidden shadow-2xl">
+          <div className="relative aspect-[768/489] max-w-4xl mx-auto rounded-[20px] overflow-hidden">
             {trustImage && (
               <Image 
                 src={trustImage.imageUrl}
