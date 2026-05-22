@@ -43,35 +43,34 @@ export default function Home() {
 
       <ProblemSolution />
 
-      {/* Grouped Trust Banner Images */}
-      <section className="bg-black space-y-0 py-8">
-        {firstTrustImage && (
-          <div className="container mx-auto px-4 py-8">
-            <div className="relative aspect-[1200/400] max-w-6xl mx-auto rounded-[20px] overflow-hidden">
-              <Image 
-                src={firstTrustImage.imageUrl}
-                alt={firstTrustImage.description}
-                fill
-                className="object-contain"
-                data-ai-hint={firstTrustImage.imageHint}
-              />
-            </div>
+      {/* Grouped Trust Banners - 2 Columns on Desktop, 1 Column on Mobile */}
+      <section className="bg-black py-12">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center max-w-7xl mx-auto">
+            {firstTrustImage && (
+              <div className="relative aspect-video w-full rounded-[20px] overflow-hidden">
+                <Image 
+                  src={firstTrustImage.imageUrl}
+                  alt={firstTrustImage.description}
+                  fill
+                  className="object-contain"
+                  data-ai-hint={firstTrustImage.imageHint}
+                />
+              </div>
+            )}
+            {secondTrustImage && (
+              <div className="relative aspect-video w-full rounded-[20px] overflow-hidden">
+                <Image 
+                  src={secondTrustImage.imageUrl}
+                  alt={secondTrustImage.description}
+                  fill
+                  className="object-contain"
+                  data-ai-hint={secondTrustImage.imageHint}
+                />
+              </div>
+            )}
           </div>
-        )}
-
-        {secondTrustImage && (
-          <div className="container mx-auto px-4 py-8">
-            <div className="relative aspect-[768/489] max-w-4xl mx-auto rounded-[20px] overflow-hidden">
-              <Image 
-                src={secondTrustImage.imageUrl}
-                alt={secondTrustImage.description}
-                fill
-                className="object-contain"
-                data-ai-hint={secondTrustImage.imageHint}
-              />
-            </div>
-          </div>
-        )}
+        </div>
       </section>
 
       <PromoBanner />
