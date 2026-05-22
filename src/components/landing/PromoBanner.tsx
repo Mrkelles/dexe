@@ -20,25 +20,25 @@ export function PromoBanner() {
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-          <div className="relative aspect-square md:aspect-[4/5] rounded-[32px] overflow-hidden border-4 border-[#1A1A1A] shadow-2xl transition-transform hover:scale-[1.02] duration-500">
+          <div className="relative aspect-[3/4] md:aspect-[4/5] rounded-[32px] overflow-hidden border-4 border-[#1A1A1A] bg-[#0A0A0A] shadow-2xl transition-transform hover:scale-[1.02] duration-500">
             {promo1 && (
               <Image
                 src={promo1.imageUrl}
                 alt={promo1.description}
                 fill
-                className="object-cover"
+                className="object-contain"
                 data-ai-hint={promo1.imageHint}
               />
             )}
           </div>
           
-          <div className="relative aspect-square md:aspect-[4/5] rounded-[32px] overflow-hidden border-4 border-[#1A1A1A] shadow-2xl transition-transform hover:scale-[1.02] duration-500">
+          <div className="relative aspect-[3/4] md:aspect-[4/5] rounded-[32px] overflow-hidden border-4 border-[#1A1A1A] bg-[#0A0A0A] shadow-2xl transition-transform hover:scale-[1.02] duration-500">
             {promo2 && (
               <Image
                 src={promo2.imageUrl}
                 alt={promo2.description}
                 fill
-                className="object-cover"
+                className="object-contain"
                 data-ai-hint={promo2.imageHint}
               />
             )}
