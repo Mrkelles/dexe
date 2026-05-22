@@ -39,10 +39,14 @@ export default function Home() {
         </div>
       </div>
 
-      {/* 1st Trust Banner Image */}
-      {firstTrustImage && (
-        <div className="bg-black py-12">
-          <div className="container mx-auto px-4">
+      <StoryFeature />
+
+      <ProblemSolution />
+
+      {/* Grouped Trust Banner Images */}
+      <section className="bg-black space-y-0 py-8">
+        {firstTrustImage && (
+          <div className="container mx-auto px-4 py-8">
             <div className="relative aspect-[1200/400] max-w-6xl mx-auto rounded-[20px] overflow-hidden">
               <Image 
                 src={firstTrustImage.imageUrl}
@@ -53,17 +57,11 @@ export default function Home() {
               />
             </div>
           </div>
-        </div>
-      )}
+        )}
 
-      <StoryFeature />
-
-      <ProblemSolution />
-
-      <div className="bg-black py-12">
-        <div className="container mx-auto px-4">
-          <div className="relative aspect-[768/489] max-w-4xl mx-auto rounded-[20px] overflow-hidden">
-            {secondTrustImage && (
+        {secondTrustImage && (
+          <div className="container mx-auto px-4 py-8">
+            <div className="relative aspect-[768/489] max-w-4xl mx-auto rounded-[20px] overflow-hidden">
               <Image 
                 src={secondTrustImage.imageUrl}
                 alt={secondTrustImage.description}
@@ -71,10 +69,10 @@ export default function Home() {
                 className="object-contain"
                 data-ai-hint={secondTrustImage.imageHint}
               />
-            )}
+            </div>
           </div>
-        </div>
-      </div>
+        )}
+      </section>
 
       <PromoBanner />
 
@@ -82,7 +80,6 @@ export default function Home() {
 
       <GlobalTrust />
 
-      {/* Replaced ReviewGrid with Testimonial Image Section */}
       <section id="testimonials" className="py-24 bg-black">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 space-y-4">
@@ -106,7 +103,6 @@ export default function Home() {
       </section>
  
       <ResultFocus />
-
 
       <NaturalIngredients />
 
