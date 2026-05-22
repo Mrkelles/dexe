@@ -8,7 +8,6 @@ import { ProofGallery } from '@/components/landing/ProofGallery'
 import { StoryFeature } from '@/components/landing/StoryFeature'
 import { ProblemSolution } from '@/components/landing/ProblemSolution'
 import { ProductShowcase } from '@/components/landing/ProductShowcase'
-import { ReviewGrid } from '@/components/landing/ReviewGrid'
 import { UsageGuide } from '@/components/landing/UsageGuide'
 import { OrderForm } from '@/components/landing/OrderForm'
 import { BeforeAfter } from '@/components/landing/BeforeAfter'
@@ -20,6 +19,7 @@ import { PlaceHolderImages } from '@/lib/placeholder-images'
 
 export default function Home() {
   const trustImage = PlaceHolderImages.find(img => img.id === 'trust-banner-product')
+  const testimonialImage = PlaceHolderImages.find(img => img.id === 'testimonial-full-image')
 
   return (
     <main className="min-h-screen bg-black text-white font-body">
@@ -66,7 +66,28 @@ export default function Home() {
 
       <GlobalTrust />
 
-      <ReviewGrid />
+      {/* Replaced ReviewGrid with Testimonial Image Section */}
+      <section id="testimonials" className="py-24 bg-black">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16 space-y-4">
+            <h2 className="text-3xl lg:text-4xl font-black text-white tracking-tight uppercase">What Our Customers Say</h2>
+            <p className="text-muted-foreground font-medium">Real results shared by our global community.</p>
+          </div>
+          <div className="max-w-xl mx-auto">
+            <div className="relative aspect-[481/1024] w-full rounded-[20px] overflow-hidden bg-[#0A0A0A]">
+              {testimonialImage && (
+                <Image
+                  src={testimonialImage.imageUrl}
+                  alt={testimonialImage.description}
+                  fill
+                  className="object-contain"
+                  data-ai-hint={testimonialImage.imageHint}
+                />
+              )}
+            </div>
+          </div>
+        </div>
+      </section>
  
       <ResultFocus />
 

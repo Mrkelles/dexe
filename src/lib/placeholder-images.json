@@ -173,6 +173,12 @@
       "description": "Dexe Trust Showcase Banner",
       "imageUrl": "https://i.ibb.co/mVFqpycD/Gemini-Generated-Image-kfmsegkfmsegkfms.png",
       "imageHint": "dexe trust"
+    },
+    {
+      "id": "testimonial-full-image",
+      "description": "Dexe Customer Testimonials Compilation",
+      "imageUrl": "https://i.ibb.co/2pzhvKK/Dexe-Testimonials-481x1024.jpg",
+      "imageHint": "customer testimonials"
     }
   ]
 }
