@@ -12,15 +12,15 @@ export function PromoBanner() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 space-y-4">
           <h2 className="text-3xl md:text-4xl font-black text-white uppercase tracking-tighter">
-            Real Results, <span className="text-[#22C55E]">Real Confidence</span>
+            Does Dexe <span className="text-[#22C55E]">Really Work?</span>
           </h2>
           <p className="text-muted-foreground font-medium max-w-2xl mx-auto">
-            Witness the immediate transformation. Our customers achieve natural-looking results that last for weeks.
+            Yes it does and does so without the mess of dyes
           </p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-          <div className="relative aspect-[3/4] md:aspect-[4/5] rounded-[32px] overflow-hidden bg-[#0A0A0A] shadow-2xl transition-transform hover:scale-[1.02] duration-500">
+          <div className="relative aspect-[3/4] md:aspect-[4/5] rounded-[32px] overflow-hidden shadow-2xl transition-transform hover:scale-[1.02] duration-500">
             {promo1 && (
               <Image
                 src={promo1.imageUrl}
@@ -32,7 +32,7 @@ export function PromoBanner() {
             )}
           </div>
           
-          <div className="relative aspect-[3/4] md:aspect-[4/5] rounded-[32px] overflow-hidden bg-[#0A0A0A] shadow-2xl transition-transform hover:scale-[1.02] duration-500">
+          <div className="relative aspect-[3/4] md:aspect-[4/5] rounded-[32px] overflow-hidden shadow-2xl transition-transform hover:scale-[1.02] duration-500">
             {promo2 && (
               <Image
                 src={promo2.imageUrl}

@@ -1,6 +1,12 @@
 {
   "placeholderImages": [
     {
+      "id": "trust-banner-first",
+      "description": "Dexe Global Trust and Quality Assurance Banner",
+      "imageUrl": "https://i.ibb.co/RTtfHXLd/Gemini-Generated-Image-6m555r6m555r6m55.png",
+      "imageHint": "dexe quality"
+    },
+    {
       "id": "hero-main",
       "description": "Original Dexe Black Hair Shampoo",
       "imageUrl": "https://i.ibb.co/BVtVpfdM/DEXE.webp",

@@ -18,7 +18,8 @@ import { Toaster } from '@/components/ui/toaster'
 import { PlaceHolderImages } from '@/lib/placeholder-images'
 
 export default function Home() {
-  const trustImage = PlaceHolderImages.find(img => img.id === 'trust-banner-product')
+  const firstTrustImage = PlaceHolderImages.find(img => img.id === 'trust-banner-first')
+  const secondTrustImage = PlaceHolderImages.find(img => img.id === 'trust-banner-product')
   const testimonialImage = PlaceHolderImages.find(img => img.id === 'testimonial-full-image')
 
   return (
@@ -38,29 +39,44 @@ export default function Home() {
         </div>
       </div>
 
+      {/* 1st Trust Banner Image */}
+      {firstTrustImage && (
+        <div className="bg-black py-12">
+          <div className="container mx-auto px-4">
+            <div className="relative aspect-[1200/400] max-w-6xl mx-auto rounded-[20px] overflow-hidden">
+              <Image 
+                src={firstTrustImage.imageUrl}
+                alt={firstTrustImage.description}
+                fill
+                className="object-contain"
+                data-ai-hint={firstTrustImage.imageHint}
+              />
+            </div>
+          </div>
+        </div>
+      )}
+
       <StoryFeature />
+
+      <ProblemSolution />
 
       <div className="bg-black py-12">
         <div className="container mx-auto px-4">
           <div className="relative aspect-[768/489] max-w-4xl mx-auto rounded-[20px] overflow-hidden">
-            {trustImage && (
+            {secondTrustImage && (
               <Image 
-                src={trustImage.imageUrl}
-                alt={trustImage.description}
+                src={secondTrustImage.imageUrl}
+                alt={secondTrustImage.description}
                 fill
                 className="object-contain"
-                data-ai-hint={trustImage.imageHint}
+                data-ai-hint={secondTrustImage.imageHint}
               />
             )}
           </div>
         </div>
       </div>
 
-      <BeforeAfter />
-
       <PromoBanner />
-
-      <ProblemSolution />
 
       <ProofGallery />
 
@@ -91,7 +107,6 @@ export default function Home() {
  
       <ResultFocus />
 
-      <ProductShowcase />
 
       <NaturalIngredients />
 
