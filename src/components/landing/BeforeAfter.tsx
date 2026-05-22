@@ -1,3 +1,4 @@
+
 "use client"
 
 import React from 'react'
@@ -23,7 +24,7 @@ export function BeforeAfter() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {/* Before */}
           <div className="relative group">
-            <div className="aspect-[3/4] relative rounded-[20px] overflow-hidden border-4 border-[#1A1A1A] shadow-2xl">
+            <div className="aspect-[3/4] relative rounded-[20px] overflow-hidden shadow-2xl bg-[#0A0A0A]">
                 <Image
                   src="https://picsum.photos/seed/hair-before/600/800"
                   alt="Grey hair before Dexe"
@@ -39,7 +40,7 @@ export function BeforeAfter() {
 
           {/* After */}
           <div className="relative group">
-            <div className="aspect-[3/4] relative rounded-[20px] overflow-hidden border-4 border-[#22C55E]/20 shadow-2xl">
+            <div className="aspect-[3/4] relative rounded-[20px] overflow-hidden shadow-2xl bg-[#0A0A0A]">
                 <Image
                   src="https://picsum.photos/seed/hair-after/600/800"
                   alt="Black hair after Dexe"

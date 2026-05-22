@@ -53,7 +53,7 @@ export function NaturalIngredients() {
           </div>
 
           <div className="w-full lg:w-1/2 relative">
-            <div className="aspect-square relative rounded-[40px] overflow-hidden border-8 border-[#111111] shadow-2xl">
+            <div className="aspect-square relative rounded-[40px] overflow-hidden shadow-2xl bg-[#0A0A0A]">
               {botanicalImage && (
                 <Image 
                   src={botanicalImage.imageUrl}
