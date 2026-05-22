@@ -1,5 +1,6 @@
 
 import React from 'react'
+import Image from 'next/image'
 import { Header } from '@/components/landing/Header'
 import { Hero } from '@/components/landing/Hero'
 import { PromoBanner } from '@/components/landing/PromoBanner'
@@ -15,8 +16,11 @@ import { ResultFocus } from '@/components/landing/ResultFocus'
 import { GlobalTrust } from '@/components/landing/GlobalTrust'
 import { NaturalIngredients } from '@/components/landing/NaturalIngredients'
 import { Toaster } from '@/components/ui/toaster'
+import { PlaceHolderImages } from '@/lib/placeholder-images'
 
 export default function Home() {
+  const trustImage = PlaceHolderImages.find(img => img.id === 'trust-banner-product')
+
   return (
     <main className="min-h-screen bg-black text-white font-body">
       <Header />
@@ -26,10 +30,26 @@ export default function Home() {
       <div className="bg-[#0A0A0A] py-12 border-y border-[#1A1A1A]">
         <div className="container mx-auto px-4 text-center">
           <p className="text-sm font-black uppercase tracking-widest text-muted-foreground mb-8">Trusted by families in Lagos, Abuja, Ibadan & more</p>
-          <div className="flex flex-wrap justify-center gap-12 opacity-50 grayscale invert">
+          <div className="flex flex-wrap justify-center gap-12">
             {['Beauty Daily', 'Glow Mag', 'Health Hub', 'Nigeria Skincare'].map((name, i) => (
-              <span key={i} className="text-xl font-black text-white">{name}</span>
+              <span key={i} className="text-xl font-black text-[#22C55E]">{name}</span>
             ))}
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-black py-12">
+        <div className="container mx-auto px-4">
+          <div className="relative aspect-[768/489] max-w-4xl mx-auto rounded-[20px] overflow-hidden shadow-2xl">
+            {trustImage && (
+              <Image 
+                src={trustImage.imageUrl}
+                alt={trustImage.description}
+                fill
+                className="object-contain"
+                data-ai-hint={trustImage.imageHint}
+              />
+            )}
           </div>
         </div>
       </div>
