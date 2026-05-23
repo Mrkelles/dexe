@@ -190,11 +190,11 @@ export function OrderForm() {
                     className="grid grid-cols-1 gap-3"
                   >
                     {[
-                      { id: '1-pack', label: '1 Pack of Black Hair Shampoo', price: '₦25,000' },
-                      { id: '2-packs', label: '2 Packs of Black Hair Shampoo', price: '₦45,000' },
-                      { id: '3-packs', label: '3 Packs of Black Hair Shampoo', price: '₦65,000' },
-                      { id: '4-packs', label: '4 Packs of Black Hair Shampoo', price: '₦85,000' },
-                      { id: '5-packs', label: '5 Packs of Black Hair Shampoo', price: '₦105,000' },
+                      { id: '1-bottle', label: '1 Bottle of Black Hair Shampoo', price: '₦25,000' },
+                      { id: '2-bottles', label: '2 Bottles of Black Hair Shampoo', price: '₦45,000' },
+                      { id: '3-bottles', label: '3 Bottles of Black Hair Shampoo', price: '₦65,000' },
+                      { id: '4-bottles', label: '4 Bottles of Black Hair Shampoo', price: '₦85,000' },
+                      { id: '5-bottles', label: '5 Bottles of Black Hair Shampoo', price: '₦105,000' },
                     ].map((pkg) => (
                       <div
                         key={pkg.id}

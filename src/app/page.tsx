@@ -12,6 +12,7 @@ import { BeforeAfter } from '@/components/landing/BeforeAfter'
 import { ResultFocus } from '@/components/landing/ResultFocus'
 import { GlobalTrust } from '@/components/landing/GlobalTrust'
 import { NaturalIngredients } from '@/components/landing/NaturalIngredients'
+import { PricingSection } from '@/components/landing/PricingSection'
 import { Toaster } from '@/components/ui/toaster'
 import { PlaceHolderImages } from '@/lib/placeholder-images'
 
@@ -69,6 +70,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <PricingSection />
 
       <PromoBanner />
 
