@@ -30,7 +30,7 @@ export default function Home() {
         <div className="container mx-auto px-4 text-center">
           <p className="text-sm font-black uppercase tracking-widest text-muted-foreground mb-8">Trusted by families in Lagos, Abuja, Ibadan & more</p>
           <div className="flex flex-wrap justify-center gap-12">
-            {['Beauty Daily', 'Glow Mag', 'Health Hub', 'Nigeria Skincare'].map((name, i) => (
+            {['Hair Gazette', 'Salon Pro', 'Herbal Beauty', 'Style Nigeria'].map((name, i) => (
               <span key={i} className="text-xl font-black text-[#22C55E]">{name}</span>
             ))}
           </div>
