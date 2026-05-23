@@ -17,6 +17,7 @@ export function PricingSection() {
       name: "Single Bottle",
       quantity: 1,
       price: "₦25,000",
+      originalPrice: "₦35,000",
       description: "Perfect for a trial or personal use.",
       savings: null,
       highlight: false,
@@ -25,16 +26,18 @@ export function PricingSection() {
       name: "Double Pack",
       quantity: 2,
       price: "₦45,000",
+      originalPrice: "₦55,000",
       description: "Most popular for couples or gifting.",
-      savings: "Save ₦5,000",
+      savings: "Save ₦10,000",
       highlight: true,
     },
     {
       name: "Family Bundle",
       quantity: 3,
       price: "₦65,000",
+      originalPrice: "₦85,000",
       description: "Best value for long-term hair care.",
-      savings: "Save ₦10,000",
+      savings: "Save ₦20,000",
       highlight: false,
     }
   ]
@@ -51,31 +54,34 @@ export function PricingSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto items-stretch">
           {plans.map((plan, i) => (
             <div 
               key={i} 
-              className={`relative flex flex-col p-8 rounded-[32px] border transition-all duration-300 ${
+              className={`relative flex flex-col p-8 rounded-[32px] border transition-all duration-500 backdrop-blur-xl ${
                 plan.highlight 
-                  ? 'bg-[#111111] border-[#22C55E] scale-105 z-10 shadow-heroPanel' 
-                  : 'bg-[#0A0A0A] border-[#1A1A1A] hover:border-[#22C55E]/30'
+                  ? 'bg-white/[0.08] border-[#22C55E] md:scale-105 z-10 shadow-heroPanel' 
+                  : 'bg-white/[0.03] border-white/10 hover:border-white/20'
               }`}
             >
               {plan.highlight && (
-                <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                  <Badge className="bg-[#22C55E] text-black font-black uppercase px-4 py-1">MOST POPULAR</Badge>
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-20">
+                  <Badge className="bg-[#22C55E] text-black font-black uppercase px-6 py-1.5 text-xs tracking-widest border-none">
+                    MOST POPULAR
+                  </Badge>
                 </div>
               )}
 
-              <div className="mb-8 relative h-48 flex items-center justify-center">
-                {/* Visual stacking logic for bottles */}
-                <div className="relative w-full h-full">
+              {/* Glassmorphic Full-Width Image Container */}
+              <div className="mb-10 relative h-56 w-full rounded-2xl bg-black/40 overflow-hidden flex items-center justify-center border border-white/5">
+                <div className="absolute inset-0 bg-gradient-to-b from-white/5 to-transparent pointer-events-none" />
+                <div className="relative w-full h-full p-4 flex items-center justify-center">
                   {Array.from({ length: plan.quantity }).map((_, idx) => (
                     <div 
                       key={idx}
-                      className="absolute inset-0 transition-transform"
+                      className="absolute transition-transform duration-700 w-full h-full"
                       style={{ 
-                        transform: `translateX(${(idx - (plan.quantity - 1) / 2) * 30}px) scale(${1 - idx * 0.05})`,
+                        transform: `translateX(${(idx - (plan.quantity - 1) / 2) * 40}px) scale(${1 - idx * 0.08})`,
                         zIndex: 10 - idx
                       }}
                     >
@@ -84,7 +90,7 @@ export function PricingSection() {
                           src={bottleImage.imageUrl}
                           alt="Dexe Bottle"
                           fill
-                          className="object-contain"
+                          className="object-contain drop-shadow-[0_10px_20px_rgba(34,197,94,0.3)]"
                           data-ai-hint="dexe bottle"
                         />
                       )}
@@ -93,26 +99,37 @@ export function PricingSection() {
                 </div>
               </div>
 
-              <div className="space-y-2 mb-6">
-                <h3 className="text-2xl font-black text-white uppercase">{plan.name}</h3>
-                <div className="flex items-baseline gap-2">
-                  <span className="text-4xl font-black text-[#22C55E] tabular-nums">{plan.price}</span>
+              <div className="space-y-4 mb-8">
+                <h3 className="text-2xl font-black text-white uppercase tracking-tight">{plan.name}</h3>
+                <div className="space-y-1">
+                  <div className="flex items-center gap-3">
+                    <span className="text-4xl font-black text-[#22C55E] tabular-nums tracking-tighter">
+                      {plan.price}
+                    </span>
+                    <span className="text-lg font-bold text-white/40 line-through decoration-white/60">
+                      {plan.originalPrice}
+                    </span>
+                  </div>
                   {plan.savings && (
-                    <span className="text-xs font-bold text-[#22C55E] uppercase tracking-wider">{plan.savings}</span>
+                    <p className="text-[10px] font-black text-[#22C55E] uppercase tracking-[0.2em] bg-[#22C55E]/10 w-fit px-2 py-0.5 rounded">
+                      {plan.savings}
+                    </p>
                   )}
                 </div>
-                <p className="text-sm text-muted-foreground font-medium">{plan.description}</p>
+                <p className="text-sm text-muted-foreground font-medium leading-relaxed">{plan.description}</p>
               </div>
 
-              <ul className="space-y-4 mb-8 flex-grow">
+              <ul className="space-y-4 mb-10 flex-grow">
                 {[
                   "Original Dexe Formula",
                   "Free Delivery Nationwide",
                   "Pay on Delivery Available",
                   "Scalp-Friendly Herbal Base"
                 ].map((feature, idx) => (
-                  <li key={idx} className="flex items-center gap-3 text-sm font-medium text-white/80">
-                    <Check className="h-4 w-4 text-[#22C55E]" />
+                  <li key={idx} className="flex items-center gap-3 text-sm font-semibold text-white/90">
+                    <div className="h-5 w-5 rounded-full bg-[#22C55E]/10 flex items-center justify-center shrink-0">
+                      <Check className="h-3 w-3 text-[#22C55E]" />
+                    </div>
                     {feature}
                   </li>
                 ))}
@@ -120,14 +137,14 @@ export function PricingSection() {
 
               <Link href="/order" className="block mt-auto">
                 <Button 
-                  className={`w-full h-12 rounded-full font-bold text-sm uppercase tracking-widest transition-all hover:scale-105 active:scale-95 ${
+                  className={`w-full h-14 rounded-full font-black text-xs uppercase tracking-[0.15em] transition-all hover:scale-[1.03] active:scale-95 shadow-none ${
                     plan.highlight 
                       ? 'bg-[#22C55E] hover:bg-[#16A34A] text-white' 
-                      : 'bg-white/5 hover:bg-white/10 text-white border border-white/10'
+                      : 'bg-white/10 hover:bg-white/20 text-white border border-white/10'
                   }`}
                 >
                   <ShoppingCart className="h-4 w-4 mr-2" />
-                  Order This Pack
+                  CLAIM THIS DEAL
                 </Button>
               </Link>
             </div>
