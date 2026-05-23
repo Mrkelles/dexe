@@ -40,7 +40,7 @@ export default function ThankYouPage() {
         </div>
         
         <p className="text-[10px] text-muted-foreground uppercase font-bold tracking-widest pt-4">
-          Secure Order Confirmation | Dexe Official
+          Secure Order Confirmation | Dexe
         </p>
       </div>
     </main>

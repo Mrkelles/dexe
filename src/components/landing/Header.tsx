@@ -24,7 +24,7 @@ export function Header() {
       <div className="container mx-auto flex h-full items-center justify-between px-4 sm:px-6">
         <Link href="/" className="flex items-center gap-3">
           <div className="h-6 w-6 rounded-full bg-[#22C55E]" />
-          <span className="text-base font-bold tracking-tight text-white uppercase">DEXE OFFICIAL</span>
+          <span className="text-base font-bold tracking-tight text-white uppercase">DEXE</span>
         </Link>
         
         <div className="hidden md:flex items-center gap-2">
