@@ -3,16 +3,13 @@
 
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { PlaceHolderImages } from '@/lib/placeholder-images'
 
 export function ResultFocus() {
   const resultImage = PlaceHolderImages.find(img => img.id === 'result-focus-main')
   
-  const scrollToOrder = () => {
-    document.getElementById('order-form')?.scrollIntoView({ behavior: 'smooth' })
-  }
-
   return (
     <section className="py-8 bg-black">
       <div className="container mx-auto px-4 sm:px-6">
@@ -27,12 +24,13 @@ export function ResultFocus() {
                 Stop wasting money on products that don't work. Dexe Black Hair Shampoo is the final answer to your hair struggles. Get the youth you deserve today.
               </p>
             </div>
-            <Button 
-              onClick={scrollToOrder}
-              className="h-14 px-12 rounded-full bg-[#22C55E] hover:bg-[#16A34A] text-white text-lg font-bold shadow-none transition-all hover:scale-105 uppercase tracking-tight"
-            >
-              GET YOURS NOW
-            </Button>
+            <Link href="/order">
+              <Button 
+                className="h-14 px-12 rounded-full bg-[#22C55E] hover:bg-[#16A34A] text-white text-lg font-bold shadow-none transition-all hover:scale-105 uppercase tracking-tight"
+              >
+                GET YOURS NOW
+              </Button>
+            </Link>
           </div>
 
           <div className="aspect-square relative rounded-[20px] overflow-hidden shadow-heroPanel max-w-2xl mx-auto bg-[#0A0A0A]">

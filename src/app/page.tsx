@@ -7,9 +7,7 @@ import { PromoBanner } from '@/components/landing/PromoBanner'
 import { ProofGallery } from '@/components/landing/ProofGallery'
 import { StoryFeature } from '@/components/landing/StoryFeature'
 import { ProblemSolution } from '@/components/landing/ProblemSolution'
-import { ProductShowcase } from '@/components/landing/ProductShowcase'
 import { UsageGuide } from '@/components/landing/UsageGuide'
-import { OrderForm } from '@/components/landing/OrderForm'
 import { BeforeAfter } from '@/components/landing/BeforeAfter'
 import { ResultFocus } from '@/components/landing/ResultFocus'
 import { GlobalTrust } from '@/components/landing/GlobalTrust'
@@ -43,7 +41,6 @@ export default function Home() {
 
       <ProblemSolution />
 
-      {/* Grouped Trust Banners - 2 Columns on Desktop, 1 Column on Mobile */}
       <section className="bg-black py-8">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center max-w-6xl mx-auto">
@@ -106,8 +103,6 @@ export default function Home() {
       <NaturalIngredients />
 
       <UsageGuide />
-
-      <OrderForm />
 
       <footer className="py-12 bg-black border-t border-[#1A1A1A]">
         <div className="container mx-auto px-4">

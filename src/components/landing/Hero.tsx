@@ -1,7 +1,9 @@
+
 "use client"
 
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Star } from 'lucide-react'
@@ -28,12 +30,13 @@ export function Hero() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
-                onClick={() => document.getElementById('order-form')?.scrollIntoView({ behavior: 'smooth' })}
-                className="h-14 px-10 rounded-full bg-[#22C55E] text-white text-lg font-bold hover:bg-[#16A34A] shadow-heroPanel transition-all hover:scale-105"
-              >
-                GET MY PACK NOW
-              </Button>
+              <Link href="/order">
+                <Button 
+                  className="h-14 px-10 rounded-full bg-[#22C55E] text-white text-lg font-bold hover:bg-[#16A34A] shadow-heroPanel transition-all hover:scale-105"
+                >
+                  GET MY PACK NOW
+                </Button>
+              </Link>
             </div>
 
             <div className="flex items-center gap-6 pt-4 border-t border-[#1A1A1A]">
