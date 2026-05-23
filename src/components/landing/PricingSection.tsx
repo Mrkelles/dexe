@@ -84,7 +84,7 @@ export function PricingSection() {
                       src={planImage.imageUrl}
                       alt={planImage.description}
                       fill
-                      className="object-contain p-4"
+                      className="object-cover"
                       data-ai-hint={planImage.imageHint}
                     />
                   )}
