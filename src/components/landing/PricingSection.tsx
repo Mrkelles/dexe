@@ -77,14 +77,14 @@ export function PricingSection() {
                 )}
 
                 {/* Full-Width Glassmorphic Image Header */}
-                <div className="mb-10 relative h-64 -mx-8 -mt-8 rounded-t-[32px] bg-black/40 overflow-hidden border-b border-white/5">
-                  <div className="absolute inset-0 bg-gradient-to-b from-white/10 to-transparent pointer-events-none" />
+                <div className="mb-10 relative h-64 -mx-8 -mt-8 rounded-t-[32px] bg-black/20 overflow-hidden border-b border-white/5">
+                  <div className="absolute inset-0 bg-gradient-to-b from-white/5 to-transparent pointer-events-none" />
                   {planImage && (
                     <Image 
                       src={planImage.imageUrl}
                       alt={planImage.description}
                       fill
-                      className="object-cover"
+                      className="object-contain p-4"
                       data-ai-hint={planImage.imageHint}
                     />
                   )}
