@@ -1,4 +1,3 @@
-
 "use client"
 
 import React from 'react'
@@ -82,8 +81,8 @@ export function Hero() {
               </div>
 
               <div className="absolute bottom-1/4 -right-4 z-20 bg-[#22C55E] p-4 rounded-2xl shadow-heroPanel text-white">
-                <p className="text-2xl font-black">₦18,500</p>
-                <p className="text-xs text-white/60 line-through font-bold">₦25,000</p>
+                <p className="text-2xl font-black">₦25,000</p>
+                <p className="text-xs text-white/60 line-through font-bold">₦35,000</p>
               </div>
             </div>
           </div>

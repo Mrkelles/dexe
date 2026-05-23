@@ -8,7 +8,7 @@ export function ProofGallery() {
   const proof2 = PlaceHolderImages.find(img => img.id === 'proof-2')
   
   return (
-    <section className="bg-black py-16 md:py-24 border-t border-[#1A1A1A]">
+    <section className="bg-black py-6 md:py-6 border-t border-[#1A1A1A]">
       <div className="container mx-auto px-4">
        
         

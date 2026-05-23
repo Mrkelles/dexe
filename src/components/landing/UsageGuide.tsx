@@ -55,9 +55,9 @@ export function UsageGuide() {
               <div className="space-y-6">
                 <h3 className="text-2xl font-black text-white">Today's Special Deal</h3>
                 <div className="space-y-1">
-                  <p className="text-muted-foreground line-through text-lg font-medium">Normal Price: ₦25,000</p>
-                  <p className="text-5xl font-black text-[#22C55E] tracking-tighter tabular-nums">₦18,500</p>
-                  <p className="text-[#22C55E] font-bold uppercase tracking-widest text-[10px]">Save ₦6,500 Today!</p>
+                  <p className="text-muted-foreground line-through text-lg font-medium">Normal Price: ₦35,000</p>
+                  <p className="text-5xl font-black text-[#22C55E] tracking-tighter tabular-nums">₦25,000</p>
+                  <p className="text-[#22C55E] font-bold uppercase tracking-widest text-[10px]">Save ₦10,000 Today!</p>
                 </div>
                 <div className="pt-6 border-t border-white/10 space-y-4">
                   <p className="text-sm font-medium text-muted-foreground italic leading-relaxed">"It's like I have a new head of hair. I look and feel much more confident."</p>

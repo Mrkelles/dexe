@@ -44,11 +44,11 @@ export default function Home() {
       <ProblemSolution />
 
       {/* Grouped Trust Banners - 2 Columns on Desktop, 1 Column on Mobile */}
-      <section className="bg-black py-12">
+      <section className="bg-black py-8">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center max-w-6xl mx-auto">
             {firstTrustImage && (
-              <div className="relative aspect-video w-full rounded-[20px] overflow-hidden">
+              <div className="relative aspect-square w-full rounded-[20px] overflow-hidden">
                 <Image 
                   src={firstTrustImage.imageUrl}
                   alt={firstTrustImage.description}
@@ -59,7 +59,7 @@ export default function Home() {
               </div>
             )}
             {secondTrustImage && (
-              <div className="relative aspect-video w-full rounded-[20px] overflow-hidden">
+              <div className="relative aspect-square w-full rounded-[20px] overflow-hidden">
                 <Image 
                   src={secondTrustImage.imageUrl}
                   alt={secondTrustImage.description}

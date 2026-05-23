@@ -95,46 +95,6 @@ export function OrderForm() {
 
           <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
-              <FormField
-                control={form.control}
-                name="package"
-                render={({ field }) => (
-                  <FormItem className="space-y-4">
-                    <FormLabel className="text-xs font-bold text-muted-foreground uppercase tracking-widest">Select Your Package</FormLabel>
-                    <FormControl>
-                      <RadioGroup
-                        onValueChange={field.onChange}
-                        value={field.value}
-                        className="grid grid-cols-1 gap-3"
-                      >
-                        {[
-                          { id: '1-pack', label: '1 Pack Dexe Shampoo (10 Sachets)', price: '₦18,500' },
-                          { id: '2-packs', label: '2 Packs Dexe Shampoo (Promo Value)', price: '₦32,000' },
-                          { id: '3-packs', label: '3 Packs Dexe Shampoo (Best Savings)', price: '₦45,000' },
-                        ].map((pkg) => (
-                          <div
-                            key={pkg.id}
-                            className={`flex items-center justify-between p-4 rounded-xl border transition-all cursor-pointer ${
-                              field.value === pkg.id 
-                                ? 'border-[#22C55E] bg-[#22C55E]/5 shadow-sm' 
-                                : 'border-[#1A1A1A] bg-black hover:border-[#22C55E]/40'
-                            }`}
-                            onClick={() => field.onChange(pkg.id)}
-                          >
-                            <div className="flex items-center gap-3">
-                              <RadioGroupItem value={pkg.id} id={pkg.id} className="border-[#22C55E] text-[#22C55E]" />
-                              <span className="font-bold text-sm text-white">{pkg.label}</span>
-                            </div>
-                            <span className="font-black text-[#22C55E] text-sm tabular-nums">{pkg.price}</span>
-                          </div>
-                        ))}
-                      </RadioGroup>
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <FormField
                   control={form.control}
@@ -212,6 +172,48 @@ export function OrderForm() {
                     <FormLabel className="text-[11px] font-bold uppercase tracking-wider text-muted-foreground">Delivery Address (With State)</FormLabel>
                     <FormControl>
                       <Textarea placeholder="Enter your full delivery address" className="rounded-[10px] border-[#1A1A1A] bg-black min-h-[100px] text-sm focus:ring-[#22C55E] text-white" {...field} />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+
+              <FormField
+                control={form.control}
+                name="package"
+                render={({ field }) => (
+                  <FormItem className="space-y-4">
+                    <FormLabel className="text-xs font-bold text-muted-foreground uppercase tracking-widest">Select Your Package</FormLabel>
+                    <FormControl>
+                      <RadioGroup
+                        onValueChange={field.onChange}
+                        value={field.value}
+                        className="grid grid-cols-1 gap-3"
+                      >
+                        {[
+                          { id: '1-pack', label: '1 Pack of Black Hair Shampoo', price: '₦25,000' },
+                          { id: '2-packs', label: '2 Packs of Black Hair Shampoo', price: '₦45,000' },
+                          { id: '3-packs', label: '3 Packs of Black Hair Shampoo', price: '₦65,000' },
+                          { id: '4-packs', label: '4 Packs of Black Hair Shampoo', price: '₦85,000' },
+                          { id: '5-packs', label: '5 Packs of Black Hair Shampoo', price: '₦105,000' },
+                        ].map((pkg) => (
+                          <div
+                            key={pkg.id}
+                            className={`flex items-center justify-between p-4 rounded-xl border transition-all cursor-pointer ${
+                              field.value === pkg.id 
+                                ? 'border-[#22C55E] bg-[#22C55E]/5 shadow-sm' 
+                                : 'border-[#1A1A1A] bg-black hover:border-[#22C55E]/40'
+                            }`}
+                            onClick={() => field.onChange(pkg.id)}
+                          >
+                            <div className="flex items-center gap-3">
+                              <RadioGroupItem value={pkg.id} id={pkg.id} className="border-[#22C55E] text-[#22C55E]" />
+                              <span className="font-bold text-sm text-white">{pkg.label}</span>
+                            </div>
+                            <span className="font-black text-[#22C55E] text-sm tabular-nums">{pkg.price}</span>
+                          </div>
+                        ))}
+                      </RadioGroup>
                     </FormControl>
                     <FormMessage />
                   </FormItem>

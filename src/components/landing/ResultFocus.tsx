@@ -14,20 +14,10 @@ export function ResultFocus() {
   }
 
   return (
-    <section className="py-24 bg-black">
+    <section className="py-8 bg-black">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-4xl mx-auto space-y-12">
-          <div className="aspect-square relative rounded-[20px] overflow-hidden shadow-heroPanel max-w-2xl mx-auto bg-[#0A0A0A]">
-            {resultImage && (
-              <Image
-                src={resultImage.imageUrl}
-                alt={resultImage.description}
-                fill
-                className="object-contain"
-                data-ai-hint={resultImage.imageHint}
-              />
-            )}
-          </div>
+          
           <div className="text-center space-y-8">
             <div className="space-y-4">
               <h2 className="text-3xl md:text-5xl font-black text-white tracking-tight uppercase">
@@ -43,6 +33,18 @@ export function ResultFocus() {
             >
               GET YOURS NOW
             </Button>
+          </div>
+
+          <div className="aspect-square relative rounded-[20px] overflow-hidden shadow-heroPanel max-w-2xl mx-auto bg-[#0A0A0A]">
+            {resultImage && (
+              <Image
+                src={resultImage.imageUrl}
+                alt={resultImage.description}
+                fill
+                className="object-contain"
+                data-ai-hint={resultImage.imageHint}
+              />
+            )}
           </div>
         </div>
       </div>

@@ -3,7 +3,7 @@ import { CheckCircle2, XCircle } from 'lucide-react'
 
 export function ProblemSolution() {
   return (
-    <section id="benefits" className="py-24 bg-black text-white">
+    <section id="benefits" className="py-8 bg-black text-white">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-4xl mx-auto space-y-16">
           <div className="text-center space-y-4">
