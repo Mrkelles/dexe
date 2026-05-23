@@ -10,8 +10,6 @@ import { Check, ShoppingCart } from 'lucide-react'
 import { PlaceHolderImages } from '@/lib/placeholder-images'
 
 export function PricingSection() {
-  const bottleImage = PlaceHolderImages.find(img => img.id === 'hero-main')
-
   const plans = [
     {
       name: "Single Bottle",
@@ -21,6 +19,7 @@ export function PricingSection() {
       description: "Perfect for a trial or personal use.",
       savings: null,
       highlight: false,
+      imageId: "pricing-1"
     },
     {
       name: "Double Pack",
@@ -30,6 +29,7 @@ export function PricingSection() {
       description: "Most popular for couples or gifting.",
       savings: "Save ₦10,000",
       highlight: true,
+      imageId: "pricing-2"
     },
     {
       name: "Family Bundle",
@@ -39,6 +39,7 @@ export function PricingSection() {
       description: "Best value for long-term hair care.",
       savings: "Save ₦20,000",
       highlight: false,
+      imageId: "pricing-3"
     }
   ]
 
@@ -55,100 +56,91 @@ export function PricingSection() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto items-stretch">
-          {plans.map((plan, i) => (
-            <div 
-              key={i} 
-              className={`relative flex flex-col p-8 rounded-[32px] border transition-all duration-500 backdrop-blur-xl ${
-                plan.highlight 
-                  ? 'bg-white/[0.08] border-[#22C55E] md:scale-105 z-10 shadow-heroPanel' 
-                  : 'bg-white/[0.03] border-white/10 hover:border-white/20'
-              }`}
-            >
-              {plan.highlight && (
-                <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-20">
-                  <Badge className="bg-[#22C55E] text-black font-black uppercase px-6 py-1.5 text-xs tracking-widest border-none">
-                    MOST POPULAR
-                  </Badge>
-                </div>
-              )}
-
-              {/* Full-Width Glassmorphic Image Container */}
-              <div className="mb-10 relative h-64 -mx-8 -mt-8 rounded-t-[32px] bg-black/40 overflow-hidden flex items-center justify-center border-b border-white/5">
-                <div className="absolute inset-0 bg-gradient-to-b from-white/10 to-transparent pointer-events-none" />
-                <div className="relative w-full h-full p-6 flex items-center justify-center">
-                  {Array.from({ length: plan.quantity }).map((_, idx) => (
-                    <div 
-                      key={idx}
-                      className="absolute transition-transform duration-700 w-full h-full"
-                      style={{ 
-                        transform: `translateX(${(idx - (plan.quantity - 1) / 2) * 50}px) scale(${1 - idx * 0.1})`,
-                        zIndex: 10 - idx
-                      }}
-                    >
-                      {bottleImage && (
-                        <Image 
-                          src={bottleImage.imageUrl}
-                          alt="Dexe Bottle"
-                          fill
-                          className="object-contain drop-shadow-[0_20px_40px_rgba(34,197,94,0.4)]"
-                          data-ai-hint="dexe bottle"
-                        />
-                      )}
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              <div className="space-y-4 mb-8">
-                <h3 className="text-2xl font-black text-white uppercase tracking-tight">{plan.name}</h3>
-                <div className="space-y-1">
-                  <div className="flex items-center gap-3">
-                    <span className="text-4xl font-black text-[#22C55E] tabular-nums tracking-tighter">
-                      {plan.price}
-                    </span>
-                    <span className="text-lg font-bold text-white/40 line-through decoration-white/60">
-                      {plan.originalPrice}
-                    </span>
+          {plans.map((plan, i) => {
+            const planImage = PlaceHolderImages.find(img => img.id === plan.imageId)
+            
+            return (
+              <div 
+                key={i} 
+                className={`relative flex flex-col p-8 rounded-[32px] border transition-all duration-500 backdrop-blur-xl ${
+                  plan.highlight 
+                    ? 'bg-white/[0.08] border-[#22C55E] md:scale-105 z-10 shadow-heroPanel' 
+                    : 'bg-white/[0.03] border-white/10 hover:border-white/20'
+                }`}
+              >
+                {plan.highlight && (
+                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-20">
+                    <Badge className="bg-[#22C55E] text-black font-black uppercase px-6 py-1.5 text-xs tracking-widest border-none">
+                      MOST POPULAR
+                    </Badge>
                   </div>
-                  {plan.savings && (
-                    <p className="text-[10px] font-black text-[#22C55E] uppercase tracking-[0.2em] bg-[#22C55E]/10 w-fit px-2 py-0.5 rounded">
-                      {plan.savings}
-                    </p>
+                )}
+
+                {/* Full-Width Glassmorphic Image Header */}
+                <div className="mb-10 relative h-64 -mx-8 -mt-8 rounded-t-[32px] bg-black/40 overflow-hidden border-b border-white/5">
+                  <div className="absolute inset-0 bg-gradient-to-b from-white/10 to-transparent pointer-events-none" />
+                  {planImage && (
+                    <Image 
+                      src={planImage.imageUrl}
+                      alt={planImage.description}
+                      fill
+                      className="object-cover"
+                      data-ai-hint={planImage.imageHint}
+                    />
                   )}
                 </div>
-                <p className="text-sm text-muted-foreground font-medium leading-relaxed">{plan.description}</p>
-              </div>
 
-              <ul className="space-y-4 mb-10 flex-grow">
-                {[
-                  "Original Dexe Formula",
-                  "Free Delivery Nationwide",
-                  "Pay on Delivery Available",
-                  "Scalp-Friendly Herbal Base"
-                ].map((feature, idx) => (
-                  <li key={idx} className="flex items-center gap-3 text-sm font-semibold text-white/90">
-                    <div className="h-5 w-5 rounded-full bg-[#22C55E]/10 flex items-center justify-center shrink-0">
-                      <Check className="h-3 w-3 text-[#22C55E]" />
+                <div className="space-y-4 mb-8">
+                  <h3 className="text-2xl font-black text-white uppercase tracking-tight">{plan.name}</h3>
+                  <div className="space-y-1">
+                    <div className="flex items-center gap-3">
+                      <span className="text-4xl font-black text-[#22C55E] tabular-nums tracking-tighter">
+                        {plan.price}
+                      </span>
+                      <span className="text-lg font-bold text-white/40 line-through decoration-white/60">
+                        {plan.originalPrice}
+                      </span>
                     </div>
-                    {feature}
-                  </li>
-                ))}
-              </ul>
+                    {plan.savings && (
+                      <p className="text-[10px] font-black text-[#22C55E] uppercase tracking-[0.2em] bg-[#22C55E]/10 w-fit px-2 py-0.5 rounded">
+                        {plan.savings}
+                      </p>
+                    )}
+                  </div>
+                  <p className="text-sm text-muted-foreground font-medium leading-relaxed">{plan.description}</p>
+                </div>
 
-              <Link href="/order" className="block mt-auto">
-                <Button 
-                  className={`w-full h-14 rounded-full font-black text-xs uppercase tracking-[0.15em] transition-all hover:scale-[1.03] active:scale-95 shadow-none ${
-                    plan.highlight 
-                      ? 'bg-[#22C55E] hover:bg-[#16A34A] text-white' 
-                      : 'bg-white/10 hover:bg-white/20 text-white border border-white/10'
-                  }`}
-                >
-                  <ShoppingCart className="h-4 w-4 mr-2" />
-                  CLAIM THIS DEAL
-                </Button>
-              </Link>
-            </div>
-          ))}
+                <ul className="space-y-4 mb-10 flex-grow">
+                  {[
+                    "Original Dexe Formula",
+                    "Free Delivery Nationwide",
+                    "Pay on Delivery Available",
+                    "Scalp-Friendly Herbal Base"
+                  ].map((feature, idx) => (
+                    <li key={idx} className="flex items-center gap-3 text-sm font-semibold text-white/90">
+                      <div className="h-5 w-5 rounded-full bg-[#22C55E]/10 flex items-center justify-center shrink-0">
+                        <Check className="h-3 w-3 text-[#22C55E]" />
+                      </div>
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+
+                <Link href="/order" className="block mt-auto">
+                  <Button 
+                    className={`w-full h-14 rounded-full font-black text-xs uppercase tracking-[0.15em] transition-all hover:scale-[1.03] active:scale-95 shadow-none ${
+                      plan.highlight 
+                        ? 'bg-[#22C55E] hover:bg-[#16A34A] text-white' 
+                        : 'bg-white/10 hover:bg-white/20 text-white border border-white/10'
+                    }`}
+                  >
+                    <ShoppingCart className="h-4 w-4 mr-2" />
+                    CLAIM THIS DEAL
+                  </Button>
+                </Link>
+              </div>
+            )
+          })}
         </div>
       </div>
     </section>

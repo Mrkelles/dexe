@@ -43,6 +43,24 @@
       "imageHint": "hair proof 2"
     },
     {
+      "id": "pricing-1",
+      "description": "Dexe 1 Bottle Pack",
+      "imageUrl": "https://i.ibb.co/BkPqg1Y/Chat-GPT-Image-May-23-2026-04-19-40-AM.png",
+      "imageHint": "dexe 1 bottle"
+    },
+    {
+      "id": "pricing-2",
+      "description": "Dexe 2 Bottles Pack",
+      "imageUrl": "https://i.ibb.co/fzpSYq1V/Gemini-Generated-Image-yjknrsyjknrsyjkn.png",
+      "imageHint": "dexe 2 bottles"
+    },
+    {
+      "id": "pricing-3",
+      "description": "Dexe 3 Bottles Pack",
+      "imageUrl": "https://i.ibb.co/27TYFHBb/Gemini-Generated-Image-kxe1ygkxe1ygkxe1.png",
+      "imageHint": "dexe 3 bottles"
+    },
+    {
       "id": "hero-set",
       "description": "Dexe Black Hair Shampoo Box and Sachets",
       "imageUrl": "https://picsum.photos/seed/dexe-hero/1080/1080",
