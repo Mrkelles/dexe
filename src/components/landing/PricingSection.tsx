@@ -72,16 +72,16 @@ export function PricingSection() {
                 </div>
               )}
 
-              {/* Glassmorphic Full-Width Image Container */}
-              <div className="mb-10 relative h-56 w-full rounded-2xl bg-black/40 overflow-hidden flex items-center justify-center border border-white/5">
-                <div className="absolute inset-0 bg-gradient-to-b from-white/5 to-transparent pointer-events-none" />
-                <div className="relative w-full h-full p-4 flex items-center justify-center">
+              {/* Full-Width Glassmorphic Image Container */}
+              <div className="mb-10 relative h-64 -mx-8 -mt-8 rounded-t-[32px] bg-black/40 overflow-hidden flex items-center justify-center border-b border-white/5">
+                <div className="absolute inset-0 bg-gradient-to-b from-white/10 to-transparent pointer-events-none" />
+                <div className="relative w-full h-full p-6 flex items-center justify-center">
                   {Array.from({ length: plan.quantity }).map((_, idx) => (
                     <div 
                       key={idx}
                       className="absolute transition-transform duration-700 w-full h-full"
                       style={{ 
-                        transform: `translateX(${(idx - (plan.quantity - 1) / 2) * 40}px) scale(${1 - idx * 0.08})`,
+                        transform: `translateX(${(idx - (plan.quantity - 1) / 2) * 50}px) scale(${1 - idx * 0.1})`,
                         zIndex: 10 - idx
                       }}
                     >
@@ -90,7 +90,7 @@ export function PricingSection() {
                           src={bottleImage.imageUrl}
                           alt="Dexe Bottle"
                           fill
-                          className="object-contain drop-shadow-[0_10px_20px_rgba(34,197,94,0.3)]"
+                          className="object-contain drop-shadow-[0_20px_40px_rgba(34,197,94,0.4)]"
                           data-ai-hint="dexe bottle"
                         />
                       )}
