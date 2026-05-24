@@ -1,4 +1,3 @@
-
 import type {Metadata} from 'next';
 import Script from 'next/script';
 import './globals.css';
@@ -20,7 +19,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
         
-        {/* Facebook Pixel Code */}
+        {/* Meta Pixel Code */}
         <Script id="fb-pixel" strategy="afterInteractive">
           {`
             !function(f,b,e,v,n,t,s)
@@ -31,7 +30,7 @@ export default function RootLayout({
             t.src=v;s=b.getElementsByTagName(e)[0];
             s.parentNode.insertBefore(t,s)}(window, document,'script',
             'https://connect.facebook.net/en_US/fbevents.js');
-            fbq('init', 'YOUR_PIXEL_ID_HERE');
+            fbq('init', '1671015740714273');
             fbq('track', 'PageView');
           `}
         </Script>
@@ -42,7 +41,7 @@ export default function RootLayout({
             height="1" 
             width="1" 
             style={{ display: 'none' }}
-            src={`https://www.facebook.com/tr?id=YOUR_PIXEL_ID_HERE&ev=PageView&noscript=1`}
+            src="https://www.facebook.com/tr?id=1671015740714273&ev=PageView&noscript=1"
             alt=""
           />
         </noscript>
